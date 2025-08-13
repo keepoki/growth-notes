@@ -1,4 +1,4 @@
-#Functional 
+#Functional
 
 # loadsh/fp
 
