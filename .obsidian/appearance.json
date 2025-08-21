@@ -1,4 +1,7 @@
 {
   "cssTheme": "Things 3",
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "spacing"
+  ]
 }
