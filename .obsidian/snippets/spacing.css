@@ -1,9 +1,15 @@
 /* changes to global variables */
 body {
-    --file-line-width: 100%;  /* 좌우 전체 크기로 보기 */
-    --p-spacing: 1.5rem;
-    --p-spacing-empty: 1.5rem;
-    --heading-spacing: 0.5rem;
-    --list-spacing: 0.3rem;
-    --line-height-normal: 1.7rem;
+  /* 좌우 전체 크기로 보기 */
+  --file-line-width: 100%;
+  --p-spacing: 1.5rem;
+  --p-spacing-empty: 1.5rem;
+  --heading-spacing: 0.5rem;
+  --list-spacing: 0.3rem;
+  --line-height-normal: 1.7rem;
+}
+
+.HyperMD-quote,
+.HyperMD-quote-1 {
+  padding-inline-end: 0.3rem !important;
 }
