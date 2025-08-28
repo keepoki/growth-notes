@@ -1,4 +1,4 @@
-#Scope
+#Scope 
 
 # Dynamic Scope (다이나믹 스코프)
 

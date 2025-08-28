@@ -1,9 +1,8 @@
-#Functional
+#Functional 
 
 # Functional Programming (함수형 프로그래밍)
 
 함수(수학적 개념에 가까운)를 중심으로 구성된 프로그래밍 패러다임.
-
 상태 변화와 부수 효과(side effects)를 피하고, 순수 함수(pure function)와 고차 함수(higher-order functions)를 강조합니다.
 
 ## 핵심 개념 (JavaScript 관점)
@@ -89,7 +88,6 @@ function increase() {
 }
 ```
 
-
 ## 단점
 
 |단점|설명|
@@ -105,5 +103,3 @@ function increase() {
 - 작고 재사용 가능한 함수로 코드를 분리하고
 - 불변성과 순수함수를 지키면
     → **버그를 줄이고 유지보수성 높은 코드**를 만들 수 있습니다.
-
-## 

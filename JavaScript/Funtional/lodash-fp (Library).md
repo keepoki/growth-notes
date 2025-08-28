@@ -1,9 +1,8 @@
-#Functional
+#Functional 
 
 # loadsh/fp
 
 유틸 함수 라이브러리 `loadsh`, 그중에서도 함수형 스타일을 강화한 `loadsh/fp`를 소개합니다.
-
 설치: `npm install lodash`
 
 ## `lodash` vs `lodash/fp` 차이

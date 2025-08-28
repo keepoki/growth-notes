@@ -1,5 +1,4 @@
 #Scope
-
 # Lexical Scope (렉시컬 스코프)
 
 ## 렉시컬 스코프란?
