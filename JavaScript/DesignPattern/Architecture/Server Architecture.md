@@ -1,6 +1,6 @@
 #Architecture
 
-# Server Architecture (서버 아키텍처)
+# Server Architecture
 
 서버 아키텍처 패턴은 서비스 성격(규모, 복잡도, 변경 주기, 트래픽 패턴 등)에 따라 여러 가지 접근 방식이 있습니다.
 
