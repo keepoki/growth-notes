@@ -1,0 +1,139 @@
+{
+  "id": "8e5375ce-1ac9-4311-8b45-50c271ea789f",
+  "title": "안녕 잘 작동하니",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "안녕 잘 작동하니",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\n안녕 잘 작동하니\n\n"
+        }
+      ],
+      "id": "e5b430e8-1e2a-4079-ade9-15ea1295e2b9",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": null
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "네, 잘 작동하고 있습니다. 무엇을 도와드릴까요?",
+      "id": "86f02b7d-d36f-43be-9116-4987efd5d063",
+      "metadata": {
+        "model": {
+          "providerType": "gemini",
+          "providerId": "gemini",
+          "id": "gemini-2.5-pro",
+          "model": "gemini-2.5-pro"
+        },
+        "usage": {
+          "prompt_tokens": 425,
+          "completion_tokens": 13,
+          "total_tokens": 594
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "현재 디렉토리에서 풀스택 웹 개발자를 기준으로 면접 대비 학습할 수 있는 폴더를 만들어줘",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\n현재 디렉토리에서 풀스택 웹 개발자를 기준으로 면접 대비 학습할 수 있는 폴더를 만들어줘\n\n"
+        }
+      ],
+      "id": "a1fcba0f-fc9d-4b95-9719-239d6183fd0d",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": null
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "네, 풀스택 웹 개발자 면접 대비를 위한 폴더 구조를 제안해 드립니다. 이 구조를 참고하여 학습 내용을 체계적으로 정리해 보세요.\n\n```\n/풀스택-면접-준비\n├── 00-CS-기초\n│   ├── 자료구조\n│   ├── 알고리즘\n│   ├── 네트워크\n│   └── 운영체제\n├── 01-프론트엔드\n│   ├── HTML-CSS\n│   ├── JavaScript\n│   ├── TypeScript\n│   └── 프레임워크 (React, Vue 등)\n├── 02-백엔드\n│   ├── Node.js (또는 주력 언어)\n│   ├── 프레임워크 (Express, NestJS 등)\n│   ├── API (REST, GraphQL)\n│   └── 인증-인가\n├── 03-데이터베이스\n│   ├── SQL\n│   └── NoSQL\n├── 04-데브옵스-인프라\n│   ├── Docker\n│   ├── CI-CD\n│   └── 클라우드 (AWS, GCP 등)\n├── 05-코딩-테스트\n│   ├── LeetCode\n│   └── 프로그래머스\n└── 06-기타-면접-준비\n    ├── 시스템-디자인\n    ├── 프로젝트-경험-정리\n    └── 이력서-포트폴리오\n```\n\n이 구조는 일반적인 예시이며, 본인의 기술 스택과 학습 계획에 맞게 자유롭게 수정하여 사용하시면 됩니다.",
+      "id": "6fb6b2e5-ef6d-4795-9b73-3862ddfd9ac0",
+      "metadata": {
+        "model": {
+          "providerType": "gemini",
+          "providerId": "gemini",
+          "id": "gemini-2.5-pro",
+          "model": "gemini-2.5-pro"
+        },
+        "usage": {
+          "prompt_tokens": 466,
+          "completion_tokens": 336,
+          "total_tokens": 2354
+        }
+      }
+    }
+  ],
+  "createdAt": 1761661175696,
+  "updatedAt": 1761661242826,
+  "schemaVersion": 1
+}
