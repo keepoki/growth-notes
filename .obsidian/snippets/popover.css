@@ -1,0 +1,6 @@
+/* 라이트 및 다크 모드 모두에 적용 */
+.theme-light, .theme-dark {
+  --popover-width: 800px;
+  --popover-height: 80vh;
+  --popover-max-height: 80vh;
+}

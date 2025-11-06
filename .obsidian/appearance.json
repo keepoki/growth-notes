@@ -1,7 +1,10 @@
 {
-  "cssTheme": "Things 3",
-  "theme": "obsidian",
+  "cssTheme": "Minimal",
   "enabledCssSnippets": [
-    "spacing"
-  ]
+    "text-spacing",
+    "read-text-spacing",
+    "write-text-spacing",
+    "popover"
+  ],
+  "theme": "moonstone"
 }

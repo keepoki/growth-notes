@@ -1,4 +1,12 @@
 [
   "obsidian-git",
-  "smart-composer"
+  "copilot",
+  "obsidian-style-settings",
+  "obsidian-minimal-settings",
+  "obsidian-auto-link-title",
+  "table-editor-obsidian",
+  "obsidian-excalidraw-plugin",
+  "file-tree-alternative",
+  "darlal-switcher-plus",
+  "tag-wrangler"
 ]
