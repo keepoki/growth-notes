@@ -1,8 +1,9 @@
-#DesignPattern 
+#DesignPattern
 
 # Leader-Followers
 
 여러 개의 스레드(또는 워커)가 있을 때,
+
 - **Leader**: 이벤트를 기다리다가 → 처리할 작업 발견 → **Follower**로 교체 후 처리
 - **Follower**: 대기 중 → Leader가 빠지면 → 새 Leader가 됨
 

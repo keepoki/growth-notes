@@ -1,4 +1,4 @@
-#DesignPattern 
+#DesignPattern
 
 # Producer-Consumer
 
@@ -66,7 +66,6 @@ setInterval(() => {
 }, 300);
 ```
 
-
 ## 실제 활용 예시 코드 (Node.js + `bullmq` -> Redis 기반 큐)
 
 ```js
@@ -104,7 +103,7 @@ produceTask({ type: "report", id: 123 });
 - **스트리밍 시스템** (Kafka, RabbitMQ)
 - **백엔드 마이크로서비스 간 메시지 교환**
 - **속도 불균형 완화**
-    - Producer가 빠르고 Consumer가 느려도 버퍼가 조정해줌
+  - Producer가 빠르고 Consumer가 느려도 버퍼가 조정해줌
 
 ## 정리
 

@@ -1,4 +1,4 @@
-# DesignPattern
+#DesignPattern
 
 # Template Method
 
@@ -149,4 +149,3 @@ mage.attack();
 - Template Method는 **알고리즘 틀을 상위 클래스에서 정의**하고,  **세부 구현은 하위 클래스에서 담당**하는 패턴입니다.
 - 예시: 데이터 처리 파이프라인, UI 렌더링 단계, 게임 캐릭터 행동 등.
 - 단점: 상속을 강제하므로 **클래스 간 결합도↑**, 유연성↓
-

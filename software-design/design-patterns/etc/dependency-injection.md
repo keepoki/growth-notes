@@ -1,4 +1,4 @@
-#DesignPattern 
+#DesignPattern
 
 # Dependency Injection
 
@@ -44,7 +44,6 @@ const logger = new Logger();
 const userService = new UserService(logger); // 주입
 console.log(userService.getUser(1));
 ```
-
 
 ## 실제 활용 코드 예시
 
@@ -125,6 +124,7 @@ function App() {
 - **대규모 애플리케이션**: 서비스가 많아지고 의존성이 복잡할 때 DI 컨테이너 사용
 
 ## 정리
+
 - Service Locator = "필요하면 중앙 저장소에서 꺼내옴"
 - DI = "외부에서 의존성을 넣어줌"
 - 현대 프레임워크(Angular, NestJS, Spring 등)는 DI 컨테이너를 내장

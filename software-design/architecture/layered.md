@@ -6,6 +6,7 @@
 각 계층은 **자신보다 아래 계층에만 의존**하며, 위 계층과는 느슨하게 결합합니다.
 
 **일반적인 계층 구조 예시**:
+
 1. **Presentation Layer (UI)**: 사용자 인터페이스
 2. **Application Layer (Service)**: 비즈니스 로직과 서비스
 3. **Domain Layer (Business Model)**: 도메인 엔티티와 규칙

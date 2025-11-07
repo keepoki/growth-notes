@@ -1,4 +1,4 @@
-#DesignPattern 
+#DesignPattern
 
 # Thread Pool
 
@@ -133,7 +133,7 @@ pool.runTask("작업 4");
 ## 언제 사용하면 좋은가?
 
 - **고성능 서버 (웹, DB)**
-    - ex) Apache, MySQL → Thread Pool 기반
+  - ex) Apache, MySQL → Thread Pool 기반
 - **백엔드 처리 (이미지 변환, 동영상 인코딩)**
 - **멀티코어 활용 (Node.js Worker Threads, Python concurrent.futures)**
 

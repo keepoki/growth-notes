@@ -1,4 +1,4 @@
-#DesignPattern 
+#DesignPattern
 
 # Active Object
 
@@ -50,17 +50,17 @@ activeObj.callAsync(() => Promise.resolve("작업 2 완료"))
 ## 실제 활용 예시
 
 - **UI 이벤트 처리**
-    - 버튼 클릭 시 비동기 동작을 ActiveObject 큐에 넣고 순서대로 실행
+  - 버튼 클릭 시 비동기 동작을 ActiveObject 큐에 넣고 순서대로 실행
 - **백엔드 작업 큐**
-    - Node.js에서 요청이 들어올 때 → ActiveObject 패턴으로 직렬화 실행
+  - Node.js에서 요청이 들어올 때 → ActiveObject 패턴으로 직렬화 실행
 
 ## 언제 사용하면 좋은가?
 
 - 호출자가 "비동기 코드"를 직접 관리하지 않고, 동기 호출처럼 쓰고 싶을 때
 - 이벤트 루프, 스레드풀 같은 **비동기 실행 모델**을 캡슐화할 때
 - 예:
-    - 비동기 DB 작업 관리
-    - UI에서 긴 작업을 큐잉하여 실행
+  - 비동기 DB 작업 관리
+  - UI에서 긴 작업을 큐잉하여 실행
 
 ## 정리
 

@@ -1,4 +1,4 @@
-#DesignPattern 
+#DesignPattern
 
 # Adapter
 
@@ -44,6 +44,7 @@ console.log(adapted.request()); // "데이터 (Old API 형식)"
 ## 실제 활용 코드 예시
 
 ### API 응답 변환
+
 ```js
 // 기존 API 응답
 class LegacyUserService {
@@ -80,6 +81,7 @@ console.log(adapted.getUser()); // { firstName: 'John', lastName: 'Doe' }
 ```
 
 ### 외부 라이브러리 호환
+
 ```js
 // 외부 라이브러리 (호환 안 되는 인터페이스)
 class ThirdPartyPayment {
@@ -112,13 +114,13 @@ const payment = new PaymentAdapter(thirdParty);
 console.log(payment.pay(50)); // "결제 완료: 5000 cents"
 ```
 
-
 ## 언제 사용하면 좋은가?
 
 - **기존 코드(레거시)와 새로운 코드 간의 인터페이스가 맞지 않을 때**
 - **외부 라이브러리나 API를 우리 시스템에 맞게 통합해야 할 때**
 - **한쪽을 수정하기 어려운 경우(외부 SDK, 레거시 시스템 등)**
 
-## 정리  
+## 정리
+
 Adapter는 "**돼지코 변환기**"처럼, 서로 맞지 않는 인터페이스를 중간에서 연결해주는 역할을 합니다.  
 덕분에 기존 코드를 고치지 않고 재사용할 수 있다는 장점이 있습니다.

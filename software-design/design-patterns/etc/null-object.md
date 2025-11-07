@@ -1,4 +1,4 @@
-#DesignPattern 
+#DesignPattern
 
 # Null Object
 
@@ -68,9 +68,9 @@ function createService(logger = NullLogger) {
 - `if (obj != null)` 같은 체크가 코드 전반에 많을 때
 - 기본 동작을 "아무 일도 하지 않음"으로 안전하게 처리하고 싶을 때
 - 예:
-    - 게스트 사용자 처리 (로그인 안 된 경우)
-    - 기본 로거(Logger) 제공 (log 생략 가능)
-    - 옵셔널 서비스 의존성
+  - 게스트 사용자 처리 (로그인 안 된 경우)
+  - 기본 로거(Logger) 제공 (log 생략 가능)
+  - 옵셔널 서비스 의존성
 
 ## 정리
 

@@ -1,4 +1,4 @@
-#DesignPattern 
+#DesignPattern
 
 # Data Mapper
 
@@ -127,14 +127,14 @@ const AppDataSource = new DataSource({
 ## 비교
 
 - **Active Record**
-    - 도메인 객체가 DB CRUD 직접 수행
-    - 단순 CRUD 시스템에 적합
+  - 도메인 객체가 DB CRUD 직접 수행
+  - 단순 CRUD 시스템에 적합
 - **DAO**
-    - DB 작업 전담 계층이 있음, 하지만 도메인 객체는 DB 구조와 유사할 수 있음
+  - DB 작업 전담 계층이 있음, 하지만 도메인 객체는 DB 구조와 유사할 수 있음
 - **Data Mapper**
-    - 도메인 객체는 DB를 전혀 모름
-    - Mapper가 중간 번역을 담당
-    - 가장 깔끔하지만 구현 복잡도 ↑
+  - 도메인 객체는 DB를 전혀 모름
+  - Mapper가 중간 번역을 담당
+  - 가장 깔끔하지만 구현 복잡도 ↑
 
 ## 정리
 

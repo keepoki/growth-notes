@@ -8,15 +8,18 @@
 개발자가 처음부터 모든 설계를 고민할 필요 없이, 이미 많은 사람들이 검증해둔 설계 아이디어를 참고할 수 있도록 정리된 **공통의 해결책**이라고 보면 됩니다.
 
 ## 특징
+
 - **재사용성**: 비슷한 문제에 반복적으로 적용 가능
 - **가독성 향상**: 개발자끼리 “이건 싱글톤 패턴이네”라고 말하면 바로 이해 가능
 - **유지보수 용이**: 구조가 명확해서 코드 확장과 변경이 쉬움
 - **표준화된 의사소통**: 개발자들 사이에 공통 언어처럼 사용됨
 
 ## 분류
-GoF(“Gang of Four”) 책 _Design Patterns: Elements of Reusable Object-Oriented Software_ 에서 23가지 패턴을 제시했고, 크게 3가지로 나눠요:
+
+GoF("Gang of Four") 책 _Design Patterns: Elements of Reusable Object-Oriented Software_ 에서 23가지 패턴을 제시했고, 크게 3가지로 나눠요:
 
 ### **생성(Creational) 패턴**
+
 객체 생성 방식을 캡슐화 → 코드 유연성과 재사용성 증가
 
 - **Singleton** : 객체를 하나만 생성
@@ -26,6 +29,7 @@ GoF(“Gang of Four”) 책 _Design Patterns: Elements of Reusable Object-Orient
 - **Prototype** : 기존 객체를 복제해서 생성
 
 ### 구조(Structural) 패턴
+
 클래스와 객체를 조합 → 더 큰 구조 형성
 
 - **Adapter** : 인터페이스 변환 (호환성 해결)
@@ -37,6 +41,7 @@ GoF(“Gang of Four”) 책 _Design Patterns: Elements of Reusable Object-Orient
 - **Proxy** : 대리 객체를 통해 접근 제어
 
 ### 행위(Behavioral) 패턴
+
 객체 간 책임 분산 및 협력 방식 정의
 
 - **Chain of Responsibility** : 요청을 책임 연쇄로 처리
@@ -52,6 +57,7 @@ GoF(“Gang of Four”) 책 _Design Patterns: Elements of Reusable Object-Orient
 - **Visitor** : 구조 변경 없이 새로운 연산 추가
 
 ### 동시성(Concurrency) 패턴
+
 멀티스레드, 비동기 환경에서 자주 사용
 
 - **Active Object** : 메서드 호출을 비동기적으로 실행
@@ -72,6 +78,7 @@ GoF(“Gang of Four”) 책 _Design Patterns: Elements of Reusable Object-Orient
 - **Service Layer** : 비즈니스 로직을 서비스 계층에 두기
 
 ### 아키텍처 (Architecture) 패턴
+
 시스템 전체 설계 구조에서 사용
 
 - **MVC (Model-View-Controller)** : UI 분리
@@ -151,9 +158,11 @@ GoF(“Gang of Four”) 책 _Design Patterns: Elements of Reusable Object-Orient
 - **객체 관계 단순화** → Mediator / Iterator / Memento / Interpreter
 
 ### 요약
+
 - "객체 생성 문제"라면 **생성 패턴**
 - "클래스/객체 구조 문제"라면 **구조 패턴**
 - "행동/로직 문제"라면 **행위 패턴**
 
 ## 학습 사이트
-https://github.com/RefactoringGuru/design-patterns-typescript
+
+<https://github.com/RefactoringGuru/design-patterns-typescript>

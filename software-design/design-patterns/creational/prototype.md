@@ -1,4 +1,4 @@
-#DesignPattern 
+#DesignPattern
 
 # Prototype
 
@@ -33,6 +33,7 @@ console.log(original.data === copy.data); // false (깊은 복제라 별도 객�
 ## 실제 활용 코드 예시
 
 ### 게임 캐릭터 복제
+
 ```js
 class Character {
   constructor(type, health, attack) {
@@ -61,6 +62,7 @@ console.log(warrior2); // { type: 'Warrior', health: 100, attack: 20 }
 ```
 
 ### UI 컴포넌트 템플릿 복제
+
 ```js
 class Button {
   constructor(label, color) {

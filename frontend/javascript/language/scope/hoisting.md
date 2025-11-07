@@ -1,4 +1,4 @@
-# Scope
+#Scope
 
 # Hoisting (호이스팅)
 
@@ -86,7 +86,7 @@ var sayHi = function() {
 
 4. **`const`의 불변성 보장**: `const`는 한번 할당된 값을 변경할 수 없도록 설계되었습니다. 만약 TDZ가 없다면, `const` 변수에 초기값 할당 전에 접근하여 `undefined`와 같은 임시 값을 사용할 수 있게 될 것이고, 이는 `const`의 불변성이라는 핵심 철학에 어긋날 수 있습니다. TDZ는 `const` 변수가 항상 정의된 값을 가지도록 강제합니다.
 
-### 공식 문서 ECMA-262에서 14.3.1 let과 const 선언 
+### 공식 문서 ECMA-262에서 14.3.1 let과 const 선언
 
 다음은 ECMA-262에서 **14.3.1 Let and Const Declarations**에 해당하는 내용입니다.
 
@@ -101,12 +101,13 @@ var sayHi = function() {
 만약 `let` 선언에 `초기값`이 없다면, 해당 변수는 `LexicalBinding`이 평가될 때 `undefined` 값이 할당됩니다.
 
 **요약:**
+
 1. **`let`/`const` 변수는 실행 컨텍스트의 `렉시컬 환경`에 속한다.** (즉, 블록 스코프를 따른다.)
 2. **변수 공간은 `환경 레코드`가 생성될 때 미리 확보된다.** (이게 호이스팅입니다. 하지만 `var`처럼 `undefined`로 초기화되지는 않습니다.)
 3. **`LexicalBinding`이 평가되기 전까지는 변수에 접근할 수 없다.** (이 기간이 `TDZ`이고, 접근 시 `ReferenceError`가 발생한다.)
 4. **변수에 실제 값이 할당되는 시점은 `LexicalBinding`이 평가될 때이다.**
-  - 초기값이 있으면 그 값으로 할당된다.
-  - `let` 변수에 초기값이 없으면 `undefined`로 할당된다. (`const`는 반드시 초기값이 있어야 합니다.)
+   - 초기값이 있으면 그 값으로 할당된다.
+   - `let` 변수에 초기값이 없으면 `undefined`로 할당된다. (`const`는 반드시 초기값이 있어야 합니다.)
 
 ### LexicalBinding
 
@@ -115,27 +116,33 @@ var sayHi = function() {
 `LexicalBinding`은 ECMAScript 문법의 한 요소이며, 실제 자바스크립트 코드에서 `let` 또는 `const` 키워드 뒤에 오는 변수 선언 부분을 가리킵니다.
 
 **예제 1: `let` 선언 (초기값 없음)**
+
 ```js
 let x; // 이 전체가 하나의 LexicalBinding 입니다. Initializer가 없는 경우입니다.
 
 console.log(x); // 'x'의 LexicalBinding이 평가된 후이므로 undefined가 출력됩니다.
 ```
+
 여기서 `let x;` 이 구문 전체가 `LexicalBinding`입니다. 표준 문서에 따르면, 이 `LexicalBinding`이 평가될 때 `x`에 `undefined`가 할당됩니다.
 
 **예제 2: `let` 선언 (초기값 있음)**
+
 ```js
 let y = 10; // 이 전체가 하나의 LexicalBinding 입니다. Initializer가 있는 경우입니다.
 
 console.log(y); // 'y'의 LexicalBinding이 평가된 후이므로 10이 출력됩니다.
 ```
+
 여기서 `let y = 10;` 이 구문 전체가 `LexicalBinding`입니다. 이 `LexicalBinding`이 평가될 때 `y`에 `10`이 할당됩니다.
 
 **예제 3: `const` 선언 (반드시 초기값 있음)**
+
 ```js
 const z = 'hello'; // 이 전체가 하나의 LexicalBinding 입니다. Initializer가 필수입니다.
 
 console.log(z); // 'z'의 LexicalBinding이 평가된 후이므로 'hello'가 출력됩니다.
 ```
+
 여기서 `const z = 'hello';` 이 구문 전체가 `LexicalBinding`입니다. 이 `LexicalBinding`이 평가될 때 `z`에 `'hello'`가 할당됩니다.
 
 #### TDZ와 `LexicalBinding`의 관계를 보여주는 예제

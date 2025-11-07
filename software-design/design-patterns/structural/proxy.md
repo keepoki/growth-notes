@@ -1,4 +1,4 @@
-#DesignPattern 
+#DesignPattern
 
 # Proxy
 
@@ -139,8 +139,7 @@ try {
 - **로깅 & 모니터링**  
     → 메서드 호출 기록 남기기
 - **캐싱 (Caching)**  
-    → API 응답, DB 조회 결과 재사용
-
+  → API 응답, DB 조회 결과 재사용
 
 ## 정리
 

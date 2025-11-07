@@ -1,4 +1,4 @@
-#DesignPattern 
+#DesignPattern
 
 # Composite
 
@@ -57,6 +57,7 @@ group.draw();
 ## 실제 활용 코드 예시
 
 ### 파일 시스템 구조
+
 ```js
 class FileSystemComponent {
   show(indent = "") {}
@@ -107,6 +108,7 @@ root.show();
 ```
 
 ### UI 컴포넌트 트리
+
 ```js
 class UIComponent {
   render() {}

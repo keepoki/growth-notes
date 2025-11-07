@@ -62,6 +62,7 @@ radioRemote.togglePower(); // 라디오 켜짐
 ## 실제 활용 코드 예시
 
 ### 결제 시스템 (다양한 결제 수단 + 플랫폼)
+
 ```js
 // 구현부: 결제 방법
 class PaymentMethod {
@@ -108,6 +109,7 @@ shop2.refund(12000);  // 12000원 환불 처리
 ```
 
 ### 알림 시스템 (다양한 메시지 형태 + 전송 채널)
+
 ```js
 // 구현부: 채널
 class Notifier {

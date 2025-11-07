@@ -1,4 +1,4 @@
-#DesignPattern 
+#DesignPattern
 
 # Half-Sync / Half-Async
 
@@ -58,10 +58,10 @@ system.asyncRequest("DB 응답");
 ## 실제 활용 예시
 
 1. **Node.js 서버 아키텍처**
-    - Async Layer: `libuv` 이벤트 루프 (I/O 관리)
-    - Sync Layer: JS 애플리케이션 로직
-    - Queue Layer: 이벤트 큐
-        
+   - Async Layer: `libuv` 이벤트 루프 (I/O 관리)
+   - Sync Layer: JS 애플리케이션 로직
+   - Queue Layer: 이벤트 큐
+
 2. **운영체제 커널**
     - Async Layer: Non-blocking I/O
     - Sync Layer: 사용자 모드 애플리케이션

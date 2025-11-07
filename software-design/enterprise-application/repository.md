@@ -1,4 +1,4 @@
-# DesignPattern
+#DesignPattern
 
 # Repository
 
@@ -135,4 +135,3 @@ const User = sequelize.define("User", {
 - Repository = "데이터 접근 추상화 계층"
 - 장점: **관심사 분리, 테스트 용이, DB 교체 유연성**
 - 단점: 너무 단순하면 ORM과 중복, 너무 복잡하면 오버엔지니어링
-

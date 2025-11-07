@@ -1,4 +1,4 @@
-#DesignPattern 
+#DesignPattern
 
 # Decorator
 
@@ -63,6 +63,7 @@ console.log(coffee.cost());        // 8
 ## 실제 활용 코드 예시
 
 ### Express 미들웨어 (데코레이터 개념과 유사)
+
 ```js
 function baseHandler(req) {
   return `Hello, ${req.user || "Guest"}`;
@@ -92,6 +93,7 @@ console.log(handler({}));                // "인증 필요!"
 ```
 
 ### React HOC (Higher-Order Component)
+
 ```js
 // 기본 컴포넌트
 function Button(props) {

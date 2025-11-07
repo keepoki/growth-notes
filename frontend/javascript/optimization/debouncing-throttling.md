@@ -1,4 +1,4 @@
-# Optimization
+#Optimization
 
 # Debouncing (디바운싱), Throttling (쓰로틀링)
 

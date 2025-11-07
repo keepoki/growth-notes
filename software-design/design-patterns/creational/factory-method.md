@@ -1,10 +1,11 @@
-#DesignPattern 
+#DesignPattern
 
 # Factory Method
 
 객체 생성 로직을 별도의 **팩토리(Factory) 메서드**로 캡슐화해서, 클라이언트 코드에서 `new` 키워드를 직접 사용하지 않고 객체를 생성할 수 있도록 하는 패턴입니다.
 
 ## 기본 구현
+
 ```js
 class Product {
   constructor(name) {
@@ -37,6 +38,7 @@ console.log(p2.name); // "Type B Product"
 ## 실제 활용 코드 예시
 
 ### 버튼 UI 생성(React 같은 환경에서 활용 가능)
+
 ```js
 class Button {
   render() {
@@ -76,6 +78,7 @@ console.log(factory.createButton("danger").render());
 ```
 
 ### DB 커넥션 객체 생성
+
 ```js
 class MySQLConnection {
   connect() {
@@ -109,11 +112,12 @@ console.log(mongo.connect()); // "MongoDB connected!"
 ## 언제 사용하면 좋은가?
 
 - **객체 생성 로직이 복잡하거나, 여러 종류의 객체가 있을 때**
-    - DB 연결, UI 컴포넌트 생성, 메시지 파서 등
+  - DB 연결, UI 컴포넌트 생성, 메시지 파서 등
 - **클라이언트 코드가 객체 생성 방법을 몰라도 되도록 하고 싶을 때**
-    - `new` 대신 `factory.createSomething()` 같은 방식으로 추상화
+  - `new` 대신 `factory.createSomething()` 같은 방식으로 추상화
 - **OCP(개방-폐쇄 원칙)** 적용 → 새로운 타입 추가 시 팩토리 메서드만 확장하면 됨
 
 ## 정리
+
 `Factory Method`는 **객체 생성을 한 곳에서 관리**할 수 있고, **유연하게 확장**할 수 있다는 장점이 있어요.  
 다만, 클래스나 메서드가 늘어나서 구조가 복잡해질 수 있다는 단점도 있습니다.

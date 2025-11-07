@@ -45,7 +45,7 @@ React (클라이언트)와 Node.js (서버)에서 JWT (JSON Web Token)와 Refres
 
 **프로젝트 구조:**
 
-```
+```text
 jwt-refresh-token-example/
 ├── server/
 │   ├── .env
@@ -95,7 +95,7 @@ jwt-refresh-token-example/
 
 **`server/.env`** (루트 폴더에 `.env` 파일 생성)
 
-```
+```env
 ACCESS_TOKEN_SECRET=your_access_token_secret_key_here
 REFRESH_TOKEN_SECRET=your_refresh_token_secret_key_here
 PORT=5000
@@ -590,7 +590,7 @@ export default App;
     - **용도:** 보호된 리소스에 접근할 때 사용됩니다.
     - **수명:** 짧은 수명 (예: 15분 ~ 1시간). 만료가 빠를수록 토큰 탈취 시 위험이 줄어듭니다.
     - **저장 위치 (클라이언트):** 메모리 (React State, Context, Redux 등)에 저장하는 것이 좋습니다. `localStorage`에 저장하면 XSS(Cross-Site Scripting) 공격에 취약해질 수 있습니다.
-        
+
 2. **Refresh Token (리프레시 토큰):**
     - **용도:** Access Token이 만료되었을 때 새로운 Access Token을 발급받기 위해 사용됩니다.
     - **수명:** 긴 수명 (예: 7일, 30일).

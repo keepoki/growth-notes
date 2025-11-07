@@ -1,4 +1,4 @@
-#DesignPattern 
+#DesignPattern
 
 # Builder
 
@@ -55,6 +55,7 @@ console.log(car);
 ## 실제 활용 코드 예시
 
 ### SQL Query Builder
+
 ```js
 class QueryBuilder {
   constructor() {
@@ -93,6 +94,7 @@ console.log(query);
 ```
 
 ### UI Form Builder
+
 ```js
 class FormBuilder {
   constructor() {
