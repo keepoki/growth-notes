@@ -121,16 +121,18 @@ app.listen(port, () => console.log(`API Gateway running on ${port}`));
 
 ## 정리
 
-- **장점**
+### 장점
+
   - 서비스 위치를 자동으로 관리 → 구성 단순화
   - 인스턴스 추가/삭제 시 자동 반영
   - 확장성, 유연성 향상
 
-- **단점**
+### 단점
+
   - 중앙 서비스 레지스트리 장애 시 전체 시스템 영향 가능
   - 네트워크 트래픽 증가
 
-- **사용 예시**
+### 사용 예시
   - Netflix Eureka
   - Consul, Etcd, Zookeeper
   - Kubernetes Service & DNS

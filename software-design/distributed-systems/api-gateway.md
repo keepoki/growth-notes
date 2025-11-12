@@ -108,17 +108,20 @@ app.listen(3002, () => console.log("Order Service on 3002"));
 
 ## 정리
 
-- **장점**
+### 장점
+
   - 클라이언트 복잡도 ↓ (단일 진입점)
   - 인증/보안/로깅/캐싱 통합 관리
   - 요청 집계 가능 (여러 서비스 데이터를 한 번에 반환 가능)
 
-- **단점**
+### 단점
+
   - Gateway가 **단일 장애점(Single Point of Failure)**
   - 요청 지연(latency) 증가 가능
   - 관리 복잡도 증가 (특히 대규모 시스템에서)
 
-- **사용 예시**
+### 사용 예시
+
   - Netflix Zuul
   - NGINX / Kong / AWS API Gateway / Express Gateway
   - GraphQL Federation (API Gateway의 진화형)

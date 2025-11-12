@@ -1,6 +1,6 @@
 #DesignPattern
 
-# Circuit Breaker
+# circuit-breaker
 
 - 분산 시스템에서 **외부 서비스 호출 실패**가 계속되면, 장애가 전파되어 전체 시스템이 불안정해질 수 있습니다.
 - **Circuit Breaker**는 이를 방지하기 위해, **일정 횟수 이상 실패하면 회로(요청 경로)를 차단(break)** 하고, 일정 시간 후 재시도하게 하는 패턴입니다.
@@ -89,15 +89,18 @@ const breaker = new CircuitBreaker(fetchUser, 3, 2, 5000);
 
 ## 정리
 
-- **장점**
+### 장점
+
   - 장애 전파 차단 → 전체 시스템 안정성 확보
   - fallback 처리 가능 → 사용자 경험 보호
 
-- **단점**
+### 단점
+
   - 상태 관리가 복잡
   - 잘못 설정하면 정상 서비스도 차단될 수 있음
 
-- **사용 예시**
+### 사용 예시
+
   - Netflix Hystrix (대표적인 구현체)
   - Resilience4j (Java)
   - Node.js: `opossum` 라이브러리
