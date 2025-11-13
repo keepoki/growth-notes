@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Half-Sync / Half-Async
+---
+tags:
+  - DesignPattern
+  - Concurrency
+title: Half-Sync/Half-Async Pattern
+---
 
 시스템을 **비동기 계층(Async Layer)**과 **동기 계층(Sync Layer)으로** 분리하고,  그 사이에 **Queue Layer**를 두어 양쪽을 연결하는 구조입니다.
 
@@ -78,3 +81,10 @@ system.asyncRequest("DB 응답");
 - Half-Sync/Half-Async = "Async(I/O) + Queue + Sync(로직)"
 - 장점: 성능(Async) + 직관적 코드(Sync) 둘 다 얻음
 - 단점: 큐 병목 가능성
+
+## 관련 개념
+
+- [[producer-consumer]]: Async 레이어에서 Queue로 전달
+- [[event-driven]]: 비동기 이벤트 처리
+- [[thread-pool]]: Sync 레이어의 Worker 구현
+- [[designpattern]]: 디자인 패턴 전체 개요

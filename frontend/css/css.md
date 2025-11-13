@@ -1,6 +1,9 @@
-#CSS
-
-# CSS 이란?
+---
+tags:
+  - CSS
+  - Frontend
+title: CSS (Cascading Style Sheets)
+---
 
 ## 개요
 
@@ -29,3 +32,9 @@ CSS를 사용하여 HTML 문서와 스타일을 분리함으로써 코드의 가
 ### 웹 접근성 향상
 
 CSS를 사용하여 화면 읽기 도구 및 다양한 기기에서 웹 페이지를 접근하기 쉽도록 만들 수 있습니다.
+
+## 관련 개념
+
+- [[html]]: CSS가 스타일링하는 HTML 구조
+- [[flexbox]]: CSS 레이아웃 기법
+- [[grid]]: CSS 그리드 레이아웃 시스템

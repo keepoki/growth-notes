@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Object Pool
+---
+tags:
+  - DesignPattern
+  - Performance
+title: Object Pool Pattern
+---
 
 비용이 큰 객체를 매번 새로 생성하지 않고,  **재사용 가능한 객체 풀(pool)을** 만들어 관리하는 패턴입니다.
 예: DB 커넥션, 스레드, 네트워크 소켓, 캐싱 가능한 대규모 객체
@@ -106,3 +109,11 @@ bullets.release(b1); // 재사용
 
 - **장점**: 성능 최적화, GC 부담 줄임, 리소스 효율 ↑
 - **단점**: 풀 관리 로직이 복잡해질 수 있음, 객체 상태 초기화 누락 시 버그 발생
+
+## 관련 개념
+
+- [[thread-pool]]: 스레드를 재사용하는 패턴
+- [[flyweight]]: 객체를 공유하는 패턴
+- [[singleton]]: 인스턴스를 하나만 생성하는 패턴
+- [[prototype]]: 객체를 복제하는 패턴
+- [[designpattern]]: 디자인 패턴 전체 개요

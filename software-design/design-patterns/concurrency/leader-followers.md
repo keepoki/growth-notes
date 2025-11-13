@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Leader-Followers
+---
+tags:
+  - DesignPattern
+  - Concurrency
+title: Leader-Followers Pattern
+---
 
 여러 개의 스레드(또는 워커)가 있을 때,
 
@@ -119,3 +122,10 @@ if (isMainThread) {
 - Leader-Followers = "스레드풀에서 Leader가 이벤트 처리 → 끝나면 다른 Follower가 Leader로 승격"
 - 장점: **리소스 효율성**, **스레드 전환 최소화**
 - 단점: **구현 난이도**, Leader 교체 관리 필요
+
+## 관련 개념
+
+- [[thread-pool]]: 스레드 풀 기반 구현
+- [[producer-consumer]]: 작업 큐 패턴
+- [[half-sync-and-half-async]]: 비동기와 동기 조합 패턴
+- [[designpattern]]: 디자인 패턴 전체 개요

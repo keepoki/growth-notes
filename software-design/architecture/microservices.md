@@ -1,6 +1,9 @@
-#Architecture
-
-# Microservices
+---
+tags:
+  - Architecture
+  - Microservices
+title: Microservices Architecture
+---
 
 마이크로서비스 아키텍처는 애플리케이션을 **작고 독립적으로 배포 가능한 서비스 단위**로 나누어 설계하는 아키텍처 패턴입니다.  
 각 서비스는 **독립적인 비즈니스 기능**을 담당하며, **자체 데이터베이스와 로직**을 갖고, **API(주로 HTTP/REST, gRPC, 메시징)** 를 통해 통신합니다.
@@ -90,3 +93,12 @@ app.listen(3002, () => console.log("Order Service running on 3002"));
 ### 사용 예시
 
 - 넷플릭스, 아마존, 쿠팡, 카카오, 네이버 등 대규모 서비스
+
+## 관련 개념
+
+- [[ddd-(domain-driven-design)]]: Bounded Context를 마이크로서비스로 구현
+- [[event-driven]]: 서비스 간 비동기 통신 방식
+- [[api-gateway]]: 마이크로서비스 진입점
+- [[service-discovery]]: 서비스 위치 찾기
+- [[circuit-breaker]]: 장애 격리 패턴
+- [[saga]]: 분산 트랜잭션 처리

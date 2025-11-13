@@ -1,6 +1,9 @@
-#Architecture
-
-# DDD (Domain-Driven Design)
+---
+tags:
+  - Architecture
+  - DDD
+title: DDD (Domain-Driven Design)
+---
 
 **DDD (Domain-Driven Design)는 도메인 주도 개발**이라고 하며, 복잡한 소프트웨어를 효과적으로 설계하고 구현하기 위한 접근 방식입니다. 2004년 에릭 에반스(Eric Evans)가 쓴 책 _"Domain-Driven Design: Tackling Complexity in the Heart of Software"_ 에서 처음 정리된 개념입니다.
 
@@ -297,3 +300,12 @@ export class OrderModule {}
 - **도메인**은 독립적이고 깔끔하게 유지
 - **인프라 변경(DB, API 교체 등)** 이 생겨도 도메인에 영향이 최소화
 - 팀원이 "도메인 용어" 중심으로 대화 → 유지보수성과 협업 효율 상승
+
+## 관련 개념
+
+- [[clean-architecture]]: DDD를 구현하는 아키텍처 패턴
+- [[hexagonal]]: DDD와 함께 사용되는 Port & Adapter 아키텍처
+- [[repository]]: 애그리게잇 저장/조회를 위한 패턴
+- [[data-mapper]]: 도메인 모델과 DB 분리 패턴
+- [[service-layer]]: 도메인 서비스 구현 계층
+- [[microservices]]: Bounded Context를 마이크로서비스로 구현

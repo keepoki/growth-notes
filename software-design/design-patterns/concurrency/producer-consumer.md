@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Producer-Consumer
+---
+tags:
+  - DesignPattern
+  - Concurrency
+title: Producer-Consumer Pattern
+---
 
 - **Producer**: 데이터를 생성하는 쪽
 - **Consumer**: 데이터를 소비(처리)하는 쪽 둘 사이에 **공유 버퍼(Queue)를 두고 비동기적으로 분리**하는 패턴.
@@ -110,3 +113,11 @@ produceTask({ type: "report", id: 123 });
 - Producer-Consumer = "생산자 ↔ Queue ↔ 소비자"
 - 장점: **속도 독립성**, **버퍼링**, **확장성**
 - 단점: 큐 관리 필요 (메모리, 장애 처리)
+
+## 관련 개념
+
+- [[thread-pool]]: Consumer를 Worker 스레드로 구현
+- [[event-driven]]: 이벤트 기반 Producer-Consumer
+- [[saga]]: 분산 트랜잭션에서의 비동기 메시지 처리
+- [[observer]]: 이벤트 생성과 소비 패턴
+- [[designpattern]]: 디자인 패턴 전체 개요

@@ -1,6 +1,10 @@
-#DesignPattern
-
-# Service Discovery
+---
+tags:
+  - DesignPattern
+  - DistributedSystems
+  - Microservices
+title: Service Discovery Pattern
+---
 
 분산 시스템(특히 **마이크로서비스**)에서는 서비스 인스턴스가 **동적으로 생성되고 사라집니다.**  
 예를 들어, `User Service`, `Order Service`, `Payment Service` 등이 각각 여러 서버나 컨테이너에 배포될 수 있습니다.
@@ -123,16 +127,24 @@ app.listen(port, () => console.log(`API Gateway running on ${port}`));
 
 ### 장점
 
-  - 서비스 위치를 자동으로 관리 → 구성 단순화
-  - 인스턴스 추가/삭제 시 자동 반영
-  - 확장성, 유연성 향상
+- 서비스 위치를 자동으로 관리 → 구성 단순화
+- 인스턴스 추가/삭제 시 자동 반영
+- 확장성, 유연성 향상
 
 ### 단점
 
-  - 중앙 서비스 레지스트리 장애 시 전체 시스템 영향 가능
-  - 네트워크 트래픽 증가
+- 중앙 서비스 레지스트리 장애 시 전체 시스템 영향 가능
+- 네트워크 트래픽 증가
 
 ### 사용 예시
-  - Netflix Eureka
-  - Consul, Etcd, Zookeeper
-  - Kubernetes Service & DNS
+
+- Netflix Eureka
+- Consul, Etcd, Zookeeper
+- Kubernetes Service & DNS
+
+## 관련 개념
+
+- [[microservices]]: Service Discovery가 사용되는 환경
+- [[api-gateway]]: Service Discovery를 사용하는 계층
+- [[circuit-breaker]]: 서비스 장애 처리
+- [[event-driven]]: 비동기 통신 방식

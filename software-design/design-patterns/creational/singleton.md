@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Singleton
+---
+tags:
+  - DesignPattern
+  - Creational
+title: Singleton Pattern
+---
 
 하나의 클래스에 대해 **인스턴스가 단 하나만 존재**하도록 보장하고, 어디서든 그 인스턴스에 접근할 수 있게 하는 패턴입니다.
 
@@ -99,3 +102,10 @@ console.log(logger1.getLogs() === logger2.getLogs()); // true
 ## 정리
 
 `Singleton`은 간단해 보이지만, **전역 상태를 가지게 되어 테스트하기 어려워지고, 코드 의존성을 강하게 만들 수 있다는 단점**도 있어요. 따라서 꼭 필요한 경우(예: 설정, 공통 유틸)에서만 사용하는 게 좋아요.
+
+## 관련 개념
+
+- [[factory-method]]: 객체 생성을 관리하는 다른 패턴
+- [[object-pool]]: 인스턴스 재사용 패턴 (Singleton과 유사)
+- [[dependency-injection]]: Singleton의 대안으로 사용되는 패턴
+- [[designpattern]]: 디자인 패턴 전체 개요

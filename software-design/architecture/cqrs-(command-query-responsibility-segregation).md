@@ -1,6 +1,9 @@
-#Architecture
-
-# CQRS (Command Query Responsibility Segregation)
+---
+tags:
+  - Architecture
+  - CQRS
+title: CQRS (Command Query Responsibility Segregation)
+---
 
 CQRS는 시스템에서 **읽기(Query)와 쓰기(Command)를 분리하는 아키텍처 패턴**입니다.
 
@@ -146,3 +149,10 @@ export default function UserPage() {
 - 전자상거래 (주문: 쓰기, 주문 조회: 읽기)
 - 금융 시스템 (거래 생성 vs 거래 내역 조회)
 - 고성능 API (읽기와 쓰기를 다른 서버로 분리)
+
+## 관련 개념
+
+- [[event-sourcing]]: CQRS와 함께 자주 사용되는 패턴
+- [[repository]]: Command와 Query에서 데이터 접근
+- [[microservices]]: CQRS를 적용한 서비스 분리
+- [[event-driven]]: Command 실행 후 이벤트 발행

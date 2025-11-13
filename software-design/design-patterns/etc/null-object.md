@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Null Object
+---
+tags:
+  - DesignPattern
+  - SafetyPattern
+title: Null Object Pattern
+---
 
 `null` 대신 "아무 일도 하지 않는 기본 객체"를 제공해서, `null 체크` 분기문을 줄이는 패턴입니다.
 
@@ -77,3 +80,10 @@ function createService(logger = NullLogger) {
 - Null Object 패턴은 **null 대신 안전한 객체를 반환**해 코드 간결화를 목적으로 사용 합니다.
 - **분기문 제거 → 가독성, 유지보수성 ↑**
 - 단점: "아무 일도 안 하는 객체"가 많아지면 디버깅 시 헷갈릴 수 있음.
+
+## 관련 개념
+
+- [[strategy]]: 기본 전략 객체 제공
+- [[state]]: 기본 상태 객체 제공
+- [[factory-method]]: Null Object 생성
+- [[designpattern]]: 디자인 패턴 전체 개요

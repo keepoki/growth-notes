@@ -1,6 +1,10 @@
-#Diagram
-
-# ERD (Entity Relationship Diagram)
+---
+tags:
+  - Database
+  - Diagram
+  - Modeling
+title: ERD (Entity Relationship Diagram)
+---
 
 ERD는 Entity Relationship Diagram(엔티티 관계 다이어그램)의 약자로, **데이터베이스 시스템의 데이터 구조와 각 개체(데이터) 간의 관계를 시각적으로 표현하는 다이어그램**입니다. 데이터베이스 설계 및 관리에 사용되며, 데이터 모델의 구조를 명확히 이해하고 데이터베이스를 효율적으로 구축하는 데 도움을 줍니다.
 
@@ -38,3 +42,9 @@ ERD는 Entity Relationship Diagram(엔티티 관계 다이어그램)의 약자�
 ![[erd_01.png]]
 
 ![[erd_02.png]]
+
+## 관련 개념
+
+- [[repository]]: ERD를 기반으로 구현하는 데이터 접근 패턴
+- [[data-mapper]]: 데이터베이스와 객체 간 매핑
+- [[ddd-(domain-driven-design)]]: 도메인 모델링과 ERD

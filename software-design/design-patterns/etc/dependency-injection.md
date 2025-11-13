@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Dependency Injection
+---
+tags:
+  - DesignPattern
+  - DependencyManagement
+title: Dependency Injection Pattern
+---
 
 객체가 스스로 의존성을 생성하지 않고,  **외부에서 필요한 의존성을 주입받는 패턴**입니다.
 
@@ -128,3 +131,11 @@ function App() {
 - Service Locator = "필요하면 중앙 저장소에서 꺼내옴"
 - DI = "외부에서 의존성을 넣어줌"
 - 현대 프레임워크(Angular, NestJS, Spring 등)는 DI 컨테이너를 내장
+
+## 관련 개념
+
+- [[service-locator]]: DI의 대안 패턴
+- [[strategy]]: 전략 객체를 주입하는 패턴
+- [[factory-method]]: 객체 생성을 위임
+- [[clean-architecture]]: DI를 활용한 의존성 역전
+- [[designpattern]]: 디자인 패턴 전체 개요

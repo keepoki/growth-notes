@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Mediator
+---
+tags:
+  - DesignPattern
+  - Behavioral
+title: Mediator Pattern
+---
 
 객체 간의 직접적인 상호작용을 피하고, **중재자(Mediator)** 객체를 통해서만 통신하게 하는 패턴입니다.
 → 객체들 간의 결합도를 낮추고, 복잡한 상호작용을 중앙에서 관리할 수 있습니다.
@@ -166,3 +169,11 @@ password.setValue("123456"); // 버튼 활성화
 
 - Mediator는 객체 간의 직접 참조를 없애고 **중앙 허브를 통해 통신**하게 합니다.
 - 결합도 낮추기 좋지만, **Mediator 자체가 비대해지는 단점**이 있습니다.
+
+## 관련 개념
+
+- [[observer]]: 이벤트 기반 통신 패턴
+- [[facade]]: 복잡한 시스템을 단순화하는 패턴
+- [[event-bus]]: Mediator 패턴의 구현 예시
+- [[publish-subscribe]]: 메시지 중개 패턴
+- [[designpattern]]: 디자인 패턴 전체 개요

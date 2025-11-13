@@ -1,6 +1,12 @@
-#Network
-
-# TCP / IP
+---
+tags:
+  - Network
+  - TCP
+  - IP
+  - Protocol
+  - System
+title: TCP / IP
+---
 
 * **TCP/IP**는 인터넷에서 데이터를 주고받기 위한 **기본 통신 규약(프로토콜 집합)** 이에요.
 * 정식 이름은 **Transmission Control Protocol / Internet Protocol**.
@@ -145,3 +151,8 @@ Host: www.naver.com
 | 전송(Transport)    | 신뢰성/순서 보장 | TCP 연결, 패킷 분할      | 봉투에 넣고 등기우편 발송 |
 | 인터넷(Internet)    | 목적지 라우팅   | IP 주소 붙여 전송        | 주소 라벨, 경로 지정   |
 | 네트워크 인터페이스(Link) | 물리 전송     | LAN/Wi-Fi 통해 신호 전달 | 우체부/배달차/비행기    |
+
+## 관련 개념
+
+* [[osi-7-layer-(osi-7-계층)]]: OSI 7계층 모델과 TCP/IP 모델 비교
+* [[computer-basic-configuration]]: 컴퓨터 하드웨어와 네트워크 통신

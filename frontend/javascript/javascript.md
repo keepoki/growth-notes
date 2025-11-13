@@ -1,4 +1,9 @@
-# JavaScript
+---
+tags:
+  - JavaScript
+  - Frontend
+title: JavaScript (프로토타입 기반 언어)
+---
 
 좋은 질문이에요 👍
 
@@ -75,3 +80,11 @@ class Person {
 ---
 
 자바스크립트는 객체가 다른 객체를 원형으로 삼아 상속하는 **프로토타입 기반 객체지향 언어**라서, "프로토타입 언어"라고 부르는 거예요.
+
+## 관련 개념
+
+- [[closure]]: JavaScript의 핵심 개념
+- [[scope]]: JavaScript의 스코프 체인
+- [[context]]: 실행 컨텍스트와 this
+- [[functional-programming]]: JavaScript의 함수형 프로그래밍
+- [[html]]: JavaScript가 조작하는 DOM 구조

@@ -1,6 +1,9 @@
-#Architecture
-
-# MVP
+---
+tags:
+  - Architecture
+  - Frontend
+title: MVP (Model-View-Presenter)
+---
 
 MVP는 **MVC 패턴의 변형**으로, UI와 비즈니스 로직을 더 철저하게 분리하기 위해 만들어진 패턴입니다.
 
@@ -127,3 +130,10 @@ const app = new UserPresenter(new UserModel(), new UserView());
 - **장점**: View는 단순 표시 역할만 하므로 테스트 용이성 ↑, 유지보수성 ↑
 - **단점**: Presenter에 로직이 집중되어 코드가 비대해질 수 있음
 - **사용 예시**: Android 앱 구조, 복잡한 입력 처리가 많은 UI
+
+## 관련 개념
+
+- [[mvc]]: MVP의 기본이 되는 패턴
+- [[mvvm]]: MVP와 유사하지만 데이터 바인딩 사용
+- [[observer]]: View와 Presenter 간 통신 패턴
+- [[layered]]: MVP가 Presentation Layer에서 사용됨

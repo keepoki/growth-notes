@@ -1,6 +1,10 @@
-#HTML
-
-# Semantic Tag
+---
+tags:
+  - HTML
+  - Frontend
+  - Accessibility
+title: Semantic Tag (시맨틱 태그)
+---
 
 **시맨틱(semantic)** = "의미가 있는"
 즉, 시맨틱 태그는 **"이 태그 안에 담긴 내용이 어떤 성격/역할을 하는지 브라우저와 개발자에게 알려주는 태그"** 예요.
@@ -171,3 +175,8 @@
 ### 빠른 체크(3초 점검)
 
 - `main` 1개인가? / `section`에 제목 있나? / 폼엔 `label`이 연결됐나? / 이미지 `alt`가 적절한가?
+
+## 관련 개념
+
+- [[html]]: 시맨틱 태그의 기반이 되는 HTML
+- [[css]]: HTML 구조를 스타일링

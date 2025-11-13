@@ -1,6 +1,10 @@
-#Context
-
-# Context (컨텍스트)
+---
+tags:
+  - JavaScript
+  - Context
+  - Frontend
+title: Execution Context (실행 컨텍스트)
+---
 
 자바스크립트에서 **컨텍스트**는 `this` 키워드가 가리키는 대상을 의미하며, 함수가 어떻게 호출되었는지에 따라 동적으로 결정됩니다. `this`가 바인딩되는 주요 컨텍스트는 다음과 같습니다.
 

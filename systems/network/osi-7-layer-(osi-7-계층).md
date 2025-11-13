@@ -1,6 +1,10 @@
-#Network
-
-# OSI 7 Layer (OSI 7 계층)
+---
+tags:
+  - Network
+  - OSI
+  - System
+title: OSI 7 Layer (OSI 7 계층)
+---
 
 OSI란 **Open Systems Interconnection Reference Model**의 줄임말이고 국제표준화기구(ISO)에서 개발한 모델로, OSI 7계층 모델은 **네트워크 통신을 계층별로 나눠서 이해**하기 위해 만든 표준 모델이에요.
 
@@ -98,3 +102,8 @@ OSI란 **Open Systems Interconnection Reference Model**의 줄임말이고 국�
 - 실제 인터넷은 **TCP/IP 모델** 기반 → OSI 계층보다 단순
   - TCP/IP: Application / Transport / Internet / Network Access
 - OSI 모델은 학습/설계용 개념적 프레임워크
+
+## 관련 개념
+
+- [[tcp-and-ip]]: TCP/IP 모델과 OSI 모델 비교
+- [[computer-basic-configuration]]: 컴퓨터 기본 구조와 네트워크

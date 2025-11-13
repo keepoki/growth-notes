@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Abstract Factory
+---
+tags:
+  - DesignPattern
+  - Creational
+title: Abstract Factory Pattern
+---
 
 관련 있는 객체들을 **하나의 “제품군(product family)”** 으로 묶어서 생성하는 팩토리를 제공하는 패턴입니다.
 클라이언트는 구체적인 클래스(`new`)를 몰라도, **추상적인 팩토리 인터페이스**를 통해 관련 객체들을 일관성 있게 생성할 수 있습니다.
@@ -155,3 +158,10 @@ runDB(new MongoFactory());
 
 - `Factory Method`는 **하나의 객체 생성 로직**에 초점을 두고,
 - `Abstract Factory`는 **서로 관련된 객체들의 집합(제품군)을** 생성하는 데 초점이 있어요.
+
+## 관련 개념
+
+- [[factory-method]]: Abstract Factory가 사용하는 기본 패턴
+- [[builder]]: 복잡한 객체 조립 패턴
+- [[prototype]]: 객체 복제 생성 패턴
+- [[designpattern]]: 디자인 패턴 전체 개요

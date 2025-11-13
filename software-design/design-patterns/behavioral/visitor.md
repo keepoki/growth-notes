@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Visitor
+---
+tags:
+  - DesignPattern
+  - Behavioral
+title: Visitor Pattern
+---
 
 객체 구조(Elements)를 변경하지 않고, 새로운 동작(Operations)을 추가할 수 있게 하는 패턴입니다.
 → 즉, **객체는 그대로 두고, 방문자(Visitor)가 행동을 정의**합니다.
@@ -155,3 +158,10 @@ party.forEach(char => char.accept(interaction));
 - Visitor 패턴은 **객체 구조를 변경하지 않고, 새로운 기능을 추가**할 수 있게 합니다.
 - "이중 디스패치(Double Dispatch)" 개념 활용.
 - 단점: 객체 구조 자체를 변경하면 Visitor도 다 바꿔야 해서 유지보수 비용이 큽니다.
+
+## 관련 개념
+
+- [[composite]]: Visitor가 순회하는 트리 구조
+- [[iterator]]: 구조를 순회하는 패턴
+- [[strategy]]: 알고리즘을 교체하는 패턴
+- [[designpattern]]: 디자인 패턴 전체 개요

@@ -1,6 +1,10 @@
-#DesignPattern 
-
-# bulkhead
+---
+tags:
+  - DesignPattern
+  - DistributedSystems
+  - Resilience
+title: Bulkhead Pattern
+---
 
 **Bulkhead(벌크헤드)** 는 배의 “격벽”에서 유래된 개념입니다.
 배가 침몰하지 않도록 구역을 나누듯이, 시스템에서도 **각 서비스나 리소스를 분리해 장애가 전체로 퍼지지 않게 하는 패턴**입니다.
@@ -13,6 +17,7 @@
 ## 기본 구현
 
 요청 격리
+
 ```js
 class Bulkhead {
   constructor(limit) {
@@ -56,7 +61,9 @@ async function simulateRequest(id) {
   }
 })();
 ```
+
 실행 결과
+
 ```sql
 Start task 1
 Start task 2
@@ -94,6 +101,7 @@ class PaymentClient {
 
 const paymentClient = new PaymentClient(5); // 동시에 5건까지만 허용
 ```
+
 이를 통해 **한 서비스의 과도한 트래픽이 전체 장애로 확산되는 것을 방지**할 수 있습니다.
 
 ## 언제 사용하면 좋은가?
@@ -122,3 +130,10 @@ const paymentClient = new PaymentClient(5); // 동시에 5건까지만 허용
 - Netflix Hystrix (Thread Pool로 서비스 격리)
 - Node.js + Semaphore 구현
 - AWS Lambda 동시 실행 제한, Kubernetes Pod Resource Limit
+
+## 관련 개념
+
+- [[circuit-breaker]]: 장애 전파 차단 패턴
+- [[microservices]]: Bulkhead가 사용되는 환경
+- [[api-gateway]]: Bulkhead를 적용하는 위치
+- [[thread-pool]]: Bulkhead 구현에 사용되는 패턴

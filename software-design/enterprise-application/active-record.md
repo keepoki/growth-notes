@@ -1,6 +1,10 @@
-#DesignPattern
-
-# Active Record
+---
+tags:
+  - DesignPattern
+  - EnterpriseApplication
+  - DataAccess
+title: Active Record Pattern
+---
 
 - 데이터베이스 테이블(Row)을 **객체(클래스 인스턴스)로** 표현하고, 그 객체가 **자신의 CRUD(Create, Read, Update, Delete) 기능을 직접 수행**하는 패턴입니다.
 - 즉, **데이터와 동작이 같은 클래스에 결합**됩니다.
@@ -105,3 +109,10 @@ User.init(
 - Active Record = "객체가 자기 데이터를 직접 DB에 저장/조회/삭제"
 - 장점: 직관적, 빠른 개발
 - 단점: 규모가 커지면 관심사 분리 어려움
+
+## 관련 개념
+
+- [[data-mapper]]: Active Record의 대안 패턴 (관심사 분리)
+- [[repository]]: 데이터 접근 추상화 패턴
+- [[dao-(data-access-object)]]: 데이터 접근 객체 패턴
+- [[unit-of-work]]: 트랜잭션 관리 패턴

@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Observer
+---
+tags:
+  - DesignPattern
+  - Behavioral
+title: Observer Pattern
+---
 
 객체의 상태 변화를 관찰하는 **옵저버(Observer)들**이 있고,  주체(Subject)의 상태가 바뀌면 옵저버들에게 자동으로 알림을 보내는 패턴입니다.
 → 이벤트 리스너, Pub/Sub 모델의 기초.
@@ -152,3 +155,12 @@ bus.publish("login", "Alice");
 - Observer는 "상태 변화 → 자동 알림" 구조입니다.
 - JS의 `addEventListener`, RxJS, Vue의 반응형 시스템, React의 상태 관리에도 활용됩니다.
 - 단점: 옵저버가 많아지면 성능 저하 및 디버깅이 어렵습니다.
+
+## 관련 개념
+
+- [[publish-subscribe]]: Observer 패턴의 확장 버전
+- [[event-bus]]: Observer 패턴 구현 예시
+- [[mediator]]: 객체 간 통신을 중재하는 유사 패턴
+- [[event-driven]]: Observer 패턴을 활용하는 아키텍처
+- [[mvvm]]: Observer 패턴을 사용하는 아키텍처
+- [[designpattern]]: 디자인 패턴 전체 개요

@@ -1,6 +1,9 @@
-#HTML
-
-# HTML 이란?
+---
+tags:
+  - HTML
+  - Frontend
+title: HTML (HyperText Markup Language)
+---
 
 ## 개요
 
@@ -13,3 +16,9 @@ HTML의 이름은 **HyperText Markup Language의 약자**입니다. 여기서 **
 ### Markup Language (마크업 언어)
 
 문서의 구조나 서식을 정의하는 언어입니다. HTML은 태그(tag)를 사용하여 텍스트의 제목, 단락, 목록 등을 표시하고, 이미지나 동영상 등의 멀티미디어 요소를 삽입합니다.
+
+## 관련 개념
+
+- [[semantic-tag]]: HTML의 의미있는 태그 구조
+- [[css]]: HTML과 함께 사용하는 스타일 시트
+- [[javascript]]: HTML과 함께 사용하는 동적 언어

@@ -1,6 +1,10 @@
-#DesignPattern
-
-# API Gateway
+---
+tags:
+  - DesignPattern
+  - DistributedSystems
+  - Microservices
+title: API Gateway Pattern
+---
 
 **API Gateway**는 마이크로서비스 아키텍처에서 **모든 클라이언트 요청의 단일 진입점(Entry Point)** 역할을 하는 패턴입니다.
 
@@ -125,3 +129,10 @@ app.listen(3002, () => console.log("Order Service on 3002"));
   - Netflix Zuul
   - NGINX / Kong / AWS API Gateway / Express Gateway
   - GraphQL Federation (API Gateway의 진화형)
+
+## 관련 개념
+
+- [[microservices]]: API Gateway가 사용되는 아키텍처
+- [[service-discovery]]: Gateway가 서비스를 찾는 방법
+- [[circuit-breaker]]: Gateway에서 장애 처리
+- [[event-driven]]: 비동기 통신 방식

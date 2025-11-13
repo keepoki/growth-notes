@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Composite
+---
+tags:
+  - DesignPattern
+  - Structural
+title: Composite Pattern
+---
 
 객체들을 트리 구조(부분-전체 계층 구조)로 구성해서,  **개별 객체와 복합 객체를 동일하게 다룰 수 있도록** 하는 패턴입니다. 흔히 **디렉토리-파일 구조** 예시로 설명합니다.
 
@@ -159,3 +162,11 @@ console.log(panel.render());
 ## 정리
 
 Composite은 **트리 구조를 편하게 관리**하기 위한 패턴으로, Leaf(단일 객체)와 Composite(복합 객체)를 같은 인터페이스로 다룰 수 있게 합니다.
+
+## 관련 개념
+
+- [[decorator]]: 객체를 감싸서 기능을 추가하는 패턴
+- [[iterator]]: 트리 구조를 순회하는 패턴
+- [[visitor]]: 트리 구조에 새로운 연산을 추가하는 패턴
+- [[builder]]: 복잡한 트리 구조를 생성하는 패턴
+- [[designpattern]]: 디자인 패턴 전체 개요

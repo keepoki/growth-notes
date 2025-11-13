@@ -1,6 +1,8 @@
-#Architecture
-
-# Layered
+---
+tags:
+  - Architecture
+title: Layered Architecture
+---
 
 계층형 아키텍처는 애플리케이션을 **기능별로 계층(layer)으로 나누어 설계**하는 패턴입니다.  
 각 계층은 **자신보다 아래 계층에만 의존**하며, 위 계층과는 느슨하게 결합합니다.
@@ -119,3 +121,11 @@ app.listen(3000, () => console.log("Server running on port 3000"));
 - **장점**: 계층별 책임 명확, 유지보수 용이, 확장성과 테스트 용이
 - **단점**: 계층 간 호출이 많으면 성능 저하 가능, 작은 시스템에는 오버헤드
 - **사용 예시**: 엔터프라이즈 웹 애플리케이션, Java/Spring, NodeJS/Express 구조
+
+## 관련 개념
+
+- [[clean-architecture]]: 계층형 아키텍처를 발전시킨 형태
+- [[hexagonal]]: 계층형 대신 Port & Adapter 구조 사용
+- [[mvc]]: Presentation Layer의 구현 패턴
+- [[repository]]: Data Access Layer의 구현 패턴
+- [[service-layer]]: Application Layer의 구현 패턴

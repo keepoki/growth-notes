@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Lazy Initialization
+---
+tags:
+  - DesignPattern
+  - Performance
+title: Lazy Initialization Pattern
+---
 
 객체나 자원의 생성을 **필요할 때까지 미루는 패턴**입니다. "쓰일 때 초기화" → 불필요한 리소스 낭비 방지.
 
@@ -84,3 +87,10 @@ app.get("/report", async (req, res) => {
 
 - **장점**: 초기 성능 최적화, 메모리 절약
 - **단점**: 최초 접근 시 지연 발생, 동시 접근 시 Race Condition 주의 필요
+
+## 관련 개념
+
+- [[proxy]]: Virtual Proxy로 지연 로딩 구현
+- [[singleton]]: Lazy Singleton 패턴
+- [[factory-method]]: 객체 생성을 지연시키는 패턴
+- [[designpattern]]: 디자인 패턴 전체 개요

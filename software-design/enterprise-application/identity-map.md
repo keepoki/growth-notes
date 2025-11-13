@@ -1,6 +1,10 @@
-#DesignPattern
-
-# Identity Map
+---
+tags:
+  - DesignPattern
+  - EnterpriseApplication
+  - Caching
+title: Identity Map Pattern
+---
 
 - 동일한 객체가 메모리에 여러 번 로드되지 않도록 **캐싱(객체 맵)을 유지**하는 패턴
 - 즉, 한 번 조회한 객체는 맵(Map)에 저장해 두고, 같은 ID로 다시 조회할 때는 **DB 대신 캐시에서 반환**
@@ -108,3 +112,10 @@ console.log(user1 === user2); // true (Identity Map 덕분)
 - Identity Map = "같은 객체는 한 번만 메모리에 존재"
 - 장점: 성능 ↑, 객체 참조 동일성 보장
 - 단점: 캐시 관리(동기화, 무효화)가 필요
+
+## 관련 개념
+
+- [[repository]]: Identity Map과 함께 사용되는 패턴
+- [[unit-of-work]]: 트랜잭션 관리 패턴
+- [[data-mapper]]: 객체와 DB 매핑
+- [[object-pool]]: 객체 재사용 패턴

@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Proxy
+---
+tags:
+  - DesignPattern
+  - Structural
+title: Proxy Pattern
+---
 
 실제 객체(Real Subject)에 접근하기 전에 **대리인(Proxy)** 을 두어,  접근 제어, 로깅, 캐싱, 지연 초기화 등을 처리하는 패턴입니다.
 
@@ -145,3 +148,11 @@ try {
 
 - Proxy는 "**실제 객체에 접근하기 전 중간 단계를 추가**"하는 패턴.
 - 실무에서 **API 캐싱, 인증, 로깅, 가상 프록시(지연 로딩)** 등에서 자주 활용됩니다.
+
+## 관련 개념
+
+- [[decorator]]: 객체에 기능을 추가하는 패턴
+- [[adapter]]: 인터페이스를 변환하는 패턴
+- [[facade]]: 복잡한 시스템을 단순화하는 패턴
+- [[lazy-initialization]]: 지연 로딩 패턴
+- [[designpattern]]: 디자인 패턴 전체 개요

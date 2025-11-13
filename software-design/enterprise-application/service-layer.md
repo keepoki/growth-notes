@@ -1,6 +1,10 @@
-#DesignPattern
-
-# Service Layer
+---
+tags:
+  - DesignPattern
+  - EnterpriseApplication
+  - BusinessLogic
+title: Service Layer Pattern
+---
 
 - **비즈니스 로직**을 한 곳(서비스 계층)에 모아두고, 프레젠테이션(UI)이나 인프라(DB, API)와 분리하는 패턴
 - 컨트롤러 → 서비스 → DAO/Repository 구조로 나누어 **관심사 분리(Separation of Concerns)를** 달성
@@ -140,3 +144,12 @@ export default router;
 - Service Layer = "비즈니스 로직의 집합"
 - 장점: 관심사 분리, 재사용성 ↑, 테스트 용이
 - 단점: 코드 계층이 많아져서 작은 앱엔 다소 복잡
+
+## 관련 개념
+
+- [[repository]]: Service Layer가 사용하는 데이터 접근 계층
+- [[dao-(data-access-object)]]: 데이터 접근 객체
+- [[unit-of-work]]: 트랜잭션 관리 패턴
+- [[layered]]: Service Layer가 속한 계층형 아키텍처
+- [[ddd-(domain-driven-design)]]: 도메인 서비스 개념
+- [[clean-architecture]]: Use Case 계층과 유사

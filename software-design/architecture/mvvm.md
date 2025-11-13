@@ -1,6 +1,9 @@
-#Architecture
-
-# MVVM
+---
+tags:
+  - Architecture
+  - Frontend
+title: MVVM (Model-View-ViewModel)
+---
 
 MVVM은 **MVC와 MVP의 진화된 형태**로, UI(View)와 로직(ViewModel)을 **데이터 바인딩(Data Binding)** 으로 연결하는 아키텍처 패턴입니다.
 
@@ -152,3 +155,10 @@ root.render(<App />);
 - **장점**: 양방향 바인딩으로 생산성 ↑, View와 로직의 결합도 ↓
 - **단점**: 데이터 바인딩이 과도하면 성능 이슈 발생 가능, 디버깅 난이도 ↑
 - **사용 예시**: Vue.js, Angular, Knockout.js, React(상태관리 라이브러리와 조합)
+
+## 관련 개념
+
+- [[mvc]]: MVVM의 기본이 되는 패턴
+- [[mvp]]: MVVM과 유사한 패턴
+- [[observer]]: 데이터 바인딩의 기반이 되는 패턴
+- [[layered]]: MVVM이 Presentation Layer에서 사용됨

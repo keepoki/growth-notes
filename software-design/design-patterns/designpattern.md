@@ -1,6 +1,9 @@
-#DesignPattern
-
-# DesignPattern
+---
+tags:
+  - DesignPattern
+  - Overview
+title: Design Pattern (디자인 패턴 개요)
+---
 
 **디자인 패턴(Design Pattern)은** 소프트웨어 설계에서 **자주 반복되는 문제를 해결하기 위해 검증된 재사용 가능한 설계 방법**을 말합니다.
 
@@ -166,3 +169,11 @@ GoF("Gang of Four") 책 _Design Patterns: Elements of Reusable Object-Oriented S
 ## 학습 사이트
 
 <https://github.com/RefactoringGuru/design-patterns-typescript>
+
+## 관련 개념
+
+- [[singleton]]: 싱글톤 패턴
+- [[factory-method]]: 팩토리 메서드 패턴
+- [[observer]]: 옵저버 패턴
+- [[strategy]]: 전략 패턴
+- [[decorator]]: 데코레이터 패턴

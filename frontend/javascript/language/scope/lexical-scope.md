@@ -1,6 +1,10 @@
-#Scope
-
-# Lexical Scope (렉시컬 스코프)
+---
+tags:
+  - JavaScript
+  - Scope
+  - Frontend
+title: Lexical Scope (렉시컬 스코프)
+---
 
 ## 렉시컬 스코프란?
 
@@ -43,3 +47,11 @@ outerFunction();
 - 반면, `outerFunction`은 `innerFunction` 내부에 선언된 `innerVar`에 접근할 수 없어요. 스코프 체인은 항상 안에서 바깥으로만 이어지기 때문이죠.
 
 만약 `innerFunction`을 `outerFunction` 밖에서 호출한다면, `outerVar`에 접근할 수 없어요. 함수를 어디서 호출했는지는 중요하지 않고, **어디서 선언했는지**가 렉시컬 스코프를 결정하는 핵심이에요.
+
+## 관련 개념
+
+- [[closure]]: 렉시컬 스코프를 활용한 패턴
+- [[scope]]: 스코프의 상위 개념
+- [[dynamic-scope]]: 실행 시점에 결정되는 스코프
+- [[context]]: 실행 컨텍스트와 스코프 체인
+- [[hoisting]]: 스코프와 관련된 JavaScript 특성

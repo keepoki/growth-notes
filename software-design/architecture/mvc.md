@@ -1,6 +1,9 @@
-#Architecture
-
-# MVC
+---
+tags:
+  - Architecture
+  - Frontend
+title: MVC (Model-View-Controller)
+---
 
 MVC는 애플리케이션을 **Model, View, Controller** 세 부분으로 나누어 역할을 분리하는 아키텍처 패턴입니다.
 
@@ -97,3 +100,10 @@ module.exports = router;
 - **장점**: 역할 분리, 코드 재사용성 ↑, 유지보수 쉬움
 - **단점**: 규모가 작을 경우 오히려 복잡해질 수 있음
 - **사용 예시**: 웹 프레임워크 (Express.js, Ruby on Rails, ASP.NET MVC 등)
+
+## 관련 개념
+
+- [[mvp]]: MVC의 변형 패턴
+- [[mvvm]]: MVC의 또 다른 변형 패턴
+- [[layered]]: MVC가 Presentation Layer에서 사용됨
+- [[observer]]: View 업데이트에 사용되는 패턴

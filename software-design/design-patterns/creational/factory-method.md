@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Factory Method
+---
+tags:
+  - DesignPattern
+  - Creational
+title: Factory Method Pattern
+---
 
 객체 생성 로직을 별도의 **팩토리(Factory) 메서드**로 캡슐화해서, 클라이언트 코드에서 `new` 키워드를 직접 사용하지 않고 객체를 생성할 수 있도록 하는 패턴입니다.
 
@@ -121,3 +124,11 @@ console.log(mongo.connect()); // "MongoDB connected!"
 
 `Factory Method`는 **객체 생성을 한 곳에서 관리**할 수 있고, **유연하게 확장**할 수 있다는 장점이 있어요.  
 다만, 클래스나 메서드가 늘어나서 구조가 복잡해질 수 있다는 단점도 있습니다.
+
+## 관련 개념
+
+- [[abstract-factory]]: 관련된 객체 제품군을 생성하는 패턴
+- [[builder]]: 복잡한 객체를 단계적으로 생성하는 패턴
+- [[prototype]]: 객체를 복제하여 생성하는 패턴
+- [[singleton]]: 인스턴스를 하나만 생성하는 패턴
+- [[designpattern]]: 디자인 패턴 전체 개요

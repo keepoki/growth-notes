@@ -1,6 +1,8 @@
-#Architecture
-
-# Hexagonal
+---
+tags:
+  - Architecture
+title: Hexagonal Architecture
+---
 
 Hexagonal Architecture(육각형 아키텍처)는 **비즈니스 로직을 중심(도메인)에** 두고, **외부 요소(DB, UI, API 등)를 Port & Adapter**를 통해 연결하는 아키텍처 패턴입니다.
 
@@ -128,3 +130,11 @@ app.listen(3000, () => console.log("Hexagonal app running on 3000"));
 - 마이크로서비스 구조
 - 도메인 주도 설계(DDD) 기반 시스템
 - 기술 스택 교체 가능성이 높은 애플리케이션
+
+## 관련 개념
+
+- [[clean-architecture]]: 매우 유사한 아키텍처 패턴
+- [[ddd-(domain-driven-design)]]: 헥사고날 아키텍처와 함께 사용되는 설계 방법론
+- [[repository]]: Port의 대표적인 예시
+- [[dependency-injection]]: Adapter 주입에 사용되는 패턴
+- [[layered]]: 전통적인 계층형 아키텍처와 비교

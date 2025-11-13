@@ -1,6 +1,11 @@
-#Optimization
-
-# Debouncing (디바운싱), Throttling (쓰로틀링)
+---
+tags:
+  - JavaScript
+  - Optimization
+  - Frontend
+  - Performance
+title: Debouncing & Throttling (디바운싱 & 쓰로틀링)
+---
 
 자바스크립트에서 **디바운싱(Debouncing)과 쓰로틀링(Throttling)은** 연속적으로 발생하는 이벤트를 제어하여 성능을 최적화하는 기술입니다. 두 기술 모두 이벤트 핸들러의 실행 횟수를 줄이는 것이 목적이지만, 동작 방식에 차이가 있습니다.
 
@@ -95,3 +100,9 @@ container.addEventListener('scroll', throttle(handleScroll, 200));
 | **실행 시점** | 마지막 이벤트 발생 후 일정 시간이 지난 뒤 한 번 실행     | 일정 시간 간격으로 실행                                   |
 | **실행 횟수** | 이벤트가 멈춘 후 딱 한 번                     | 설정한 시간 간격마다 한 번                                 |
 | **주요 용도** | 최종 결과가 중요한 경우 (입력 완료, 창 크기 조절 완료 등) | 연속적인 이벤트 발생 빈도를 제한해야 하는 경우 (스크롤, 리사이즈, 게임 조작 등) |
+
+## 관련 개념
+
+- [[closure]]: 디바운싱/쓰로틀링 구현에 사용되는 클로저
+- [[functional-programming]]: 고차 함수를 활용한 패턴
+- [[lazy-initialization]]: 지연 실행 최적화

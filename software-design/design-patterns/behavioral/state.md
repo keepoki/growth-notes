@@ -1,6 +1,9 @@
-#DesignPattern
-
-# State
+---
+tags:
+  - DesignPattern
+  - Behavioral
+title: State Pattern
+---
 
 객체의 내부 상태에 따라 행동을 바꾸는 패턴입니다.
 → `if/else`나 `switch`문으로 상태를 분기하지 않고, 상태를 **객체로 분리**해서 관리합니다.
@@ -141,3 +144,10 @@ player.pressButton(); // ⏸ 일시정지
 - State는 "상태를 객체화"해서 **조건문 대신 다형성으로 행동 제어**.
 - 예시: 교통 신호등, 미디어 플레이어, 워크플로우 단계 관리.
 - 단점: 상태 클래스가 많아지면 구조가 복잡해질 수 있습니다.
+
+## 관련 개념
+
+- [[strategy]]: 알고리즘을 교체하는 패턴
+- [[command]]: 요청을 객체로 캡슐화하는 패턴
+- [[observer]]: 상태 변경 시 알림을 전달하는 패턴
+- [[designpattern]]: 디자인 패턴 전체 개요

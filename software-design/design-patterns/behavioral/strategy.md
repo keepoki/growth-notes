@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Strategy
+---
+tags:
+  - DesignPattern
+  - Behavioral
+title: Strategy Pattern
+---
 
 알고리즘(행동)을 캡슐화해서 **런타임에 교체 가능**하게 만드는 패턴입니다.
 → `if/else`로 알고리즘 분기하는 대신, 전략 객체를 바꿔 끼우는 방식으로 유연하게 동작합니다.
@@ -144,3 +147,11 @@ console.log(sorter.sort([5, 3, 1, 4, 2]));
 - Strategy는 **"알고리즘을 바꿔 끼우는"** 패턴입니다.
 - Context는 알고리즘을 실행하되, 어떤 전략을 쓸지는 외부에서 주입.
 - 장점: 유연성 ↑ / 단점: 클래스 개수 ↑
+
+## 관련 개념
+
+- [[state]]: 상태에 따라 행동을 바꾸는 패턴
+- [[bridge]]: 추상화와 구현을 분리하는 패턴
+- [[dependency-injection]]: 전략을 주입하는 방법
+- [[template-method]]: 알고리즘 구조를 정의하는 패턴
+- [[designpattern]]: 디자인 패턴 전체 개요

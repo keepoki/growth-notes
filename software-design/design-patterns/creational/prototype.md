@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Prototype
+---
+tags:
+  - DesignPattern
+  - Creational
+title: Prototype Pattern
+---
 
 기존 객체(프로토타입)를 복제(clone)해서 새로운 객체를 생성하는 패턴입니다.
 객체를 **직접 생성(new)** 하는 대신, **이미 존재하는 객체를 복제**하여 성능 최적화와 구조 일관성을 유지할 수 있습니다.
@@ -99,3 +102,10 @@ console.log(cancelButton);  // Button { label: 'Cancel', color: 'red' }
 
 - `Prototype`은 **복잡한 객체를 매번 새로 만드는 대신, 기존 객체를 복사(clone)하여 효율적으로 재사용**하는 방법이에요.
 - 자바스크립트는 원래 프로토타입 기반 언어라서, 이 패턴이 다른 언어보다 더 자연스럽게 어울립니다.
+
+## 관련 개념
+
+- [[factory-method]]: 객체 생성 패턴의 다른 접근법
+- [[memento]]: 객체 상태 저장/복원 패턴
+- [[object-pool]]: 객체 재사용 패턴
+- [[designpattern]]: 디자인 패턴 전체 개요

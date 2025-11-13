@@ -1,6 +1,11 @@
-#CS
-
-# Computer Basic Configuration
+---
+tags:
+  - CS
+  - Computer
+  - Hardware
+  - System
+title: Computer Basic Configuration
+---
 
 ## 1. 컴퓨터의 기본 구성
 
@@ -107,3 +112,8 @@
 ---
 
 ![[computer_01.png]]
+
+## 관련 개념
+
+* [[osi-7-layer-(osi-7-계층)]]: 네트워크 통신과 컴퓨터 시스템
+* [[tcp-and-ip]]: 네트워크 프로토콜과 데이터 전송

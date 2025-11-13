@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Iterator
+---
+tags:
+  - DesignPattern
+  - Behavioral
+title: Iterator Pattern
+---
 
 컬렉션(배열, 리스트, 트리 등) 내부 구조를 노출하지 않고, 원소에 순차적으로 접근할 수 있게 해주는 패턴입니다.
 자바스크립트는 `Iterator`와 `Iterable` 프로토콜을 기본적으로 지원하므로 활용도가 높습니다.
@@ -105,3 +108,10 @@ for (const value of tree) {
 - Iterator는 "내부 구조를 몰라도 순회 가능"하게 해주는 패턴입니다.
 - JS에서는 `for...of`, `Symbol.iterator`, 제너레이터(`function*`)로 자연스럽게 구현 가능합니다.
 - React, Redux 같은 라이브러리 내부에서도 데이터 순회에 자주 쓰입니다.
+
+## 관련 개념
+
+- [[composite]]: 트리 구조를 순회할 때 사용
+- [[visitor]]: 구조를 순회하면서 연산을 적용하는 패턴
+- [[functional-programming]]: 함수형 프로그래밍의 반복 처리
+- [[designpattern]]: 디자인 패턴 전체 개요

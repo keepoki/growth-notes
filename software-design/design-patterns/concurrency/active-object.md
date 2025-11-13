@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Active Object
+---
+tags:
+  - DesignPattern
+  - Concurrency
+title: Active Object Pattern
+---
 
 객체의 메서드 호출을 **비동기적으로 실행**하면서,  호출자(Caller)와 실행자(Worker)를 분리하는 패턴입니다.
 호출자는 그냥 "메서드 호출"하듯 쓰지만 → 내부적으로는 비동기 큐에 들어가 Worker 스레드(또는 이벤트 루프)가 실행.
@@ -67,3 +70,11 @@ activeObj.callAsync(() => Promise.resolve("작업 2 완료"))
 - Active Object = "메서드 호출을 큐에 넣고 비동기적으로 실행"
 - 장점: 코드 간단해지고 동기처럼 보임
 - 단점: 큐 병목, 작업 우선순위 관리 필요
+
+## 관련 개념
+
+- [[producer-consumer]]: 비동기 작업 큐 패턴
+- [[command]]: 요청을 객체로 캡슐화
+- [[proxy]]: 비동기 호출을 감싸는 패턴
+- [[thread-pool]]: Worker 스레드로 실행
+- [[designpattern]]: 디자인 패턴 전체 개요

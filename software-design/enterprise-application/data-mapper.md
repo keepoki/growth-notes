@@ -1,6 +1,10 @@
-#DesignPattern
-
-# Data Mapper
+---
+tags:
+  - DesignPattern
+  - EnterpriseApplication
+  - DataAccess
+title: Data Mapper Pattern
+---
 
 - **도메인 객체(Domain Model)와** **DB 엔티티(Table Row)를** 서로 매핑해주는 전용 계층(Mapper)을 둠
 - 도메인 객체는 **비즈니스 로직만 담당**하고, DB 저장/조회 로직은 전혀 알지 못함
@@ -141,3 +145,12 @@ const AppDataSource = new DataSource({
 - Data Mapper = "객체와 DB 사이의 번역가"
 - 장점: 관심사 완전 분리, 대규모 시스템 적합
 - 단점: 구현 복잡도 ↑
+
+## 관련 개념
+
+- [[repository]]: Data Mapper와 함께 사용되는 패턴
+- [[active-record]]: Data Mapper의 대안 패턴
+- [[dao-(data-access-object)]]: 데이터 접근 패턴
+- [[unit-of-work]]: 트랜잭션 관리 패턴
+- [[ddd-(domain-driven-design)]]: 도메인 주도 설계
+- [[clean-architecture]]: 계층 분리 아키텍처

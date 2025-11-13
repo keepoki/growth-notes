@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Thread Pool
+---
+tags:
+  - DesignPattern
+  - Concurrency
+title: Thread Pool Pattern
+---
 
 새로운 스레드를 매번 만드는 대신, **미리 생성된 스레드 묶음(풀)을 두고** 요청이 들어올 때마다 **빈 스레드에 작업 할당**하고 작업 끝나면 스레드를 반납하여 재사용합니다.
 성능 개선 + 리소스 절약을 위해 **웹 서버, DB, 메시지 브로커** 등에서 거의 필수적으로 사용됩니다.
@@ -142,3 +145,11 @@ pool.runTask("작업 4");
 - Thread Pool = "스레드 재사용으로 성능 향상 & 리소스 절약"
 - 장점: **성능**, **리소스 관리**
 - 단점: **풀 크기 조절**이 어렵다 (너무 크면 낭비, 너무 작으면 병목)
+
+## 관련 개념
+
+- [[producer-consumer]]: Task를 큐에 넣고 Worker가 처리
+- [[object-pool]]: 객체 재사용 패턴
+- [[bulkhead]]: 리소스 격리 패턴
+- [[active-object]]: 비동기 실행 패턴
+- [[designpattern]]: 디자인 패턴 전체 개요

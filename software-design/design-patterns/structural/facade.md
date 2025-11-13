@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Facade
+---
+tags:
+  - DesignPattern
+  - Structural
+title: Facade Pattern
+---
 
 복잡한 서브시스템(여러 클래스, 모듈)을  **간단한 인터페이스**로 감싸서 클라이언트가 쉽게 사용할 수 있도록 하는 패턴입니다. 흔히 "리모컨" 비유를 많이 합니다. (내부적으로 복잡한 전자 회로 → 버튼 몇 개만 제공)
 
@@ -134,3 +137,10 @@ UI.createButton("Submit", app, () => alert(input.value));
 - `Facade`는 "**복잡한 내부 로직을 숨기고, 단순한 인터페이스만 제공**"하는 패턴이에요.
 - 장점: 사용성 향상, 의존성 감소, 코드 단순화.
 - 단점: 너무 많은 기능을 넣으면 "거대한 리모컨(God Facade)"이 될 수 있음.
+
+## 관련 개념
+
+- [[adapter]]: 인터페이스를 변환하는 패턴
+- [[service-layer]]: Facade를 사용하는 계층
+- [[api-gateway]]: 마이크로서비스에서의 Facade
+- [[designpattern]]: 디자인 패턴 전체 개요

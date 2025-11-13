@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Template Method
+---
+tags:
+  - DesignPattern
+  - Behavioral
+title: Template Method Pattern
+---
 
 상위 클래스에서 **알고리즘의 뼈대(템플릿)를** 정의하고, 일부 단계는 하위 클래스에서 오버라이드하여 구현하는 패턴입니다.
 → 공통 로직은 상위 클래스에 두고, 세부 구현은 하위 클래스에서 맡김.
@@ -149,3 +152,10 @@ mage.attack();
 - Template Method는 **알고리즘 틀을 상위 클래스에서 정의**하고,  **세부 구현은 하위 클래스에서 담당**하는 패턴입니다.
 - 예시: 데이터 처리 파이프라인, UI 렌더링 단계, 게임 캐릭터 행동 등.
 - 단점: 상속을 강제하므로 **클래스 간 결합도↑**, 유연성↓
+
+## 관련 개념
+
+- [[strategy]]: 알고리즘을 교체하는 패턴 (조합 기반)
+- [[factory-method]]: 객체 생성을 하위 클래스에 위임
+- [[builder]]: 객체 생성 단계를 정의하는 패턴
+- [[designpattern]]: 디자인 패턴 전체 개요

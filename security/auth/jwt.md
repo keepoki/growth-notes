@@ -1,6 +1,10 @@
-#Auth
-
-# JWT (JSON Web Token)
+---
+tags:
+  - Security
+  - Auth
+  - JWT
+title: JWT (JSON Web Token)
+---
 
 ## 개념
 
@@ -610,3 +614,9 @@ export default App;
     - **CORS 설정:** 프로덕션 환경에서는 `cors` 미들웨어의 `origin`을 실제 클라이언트 도메인으로 정확히 설정해야 합니다.
 
 이 예제는 `JWT`와 `Refresh Token`을 사용하는 기본적인 구조를 보여주며, 실제 프로덕션 환경에서는 더 많은 보안 및 예외 처리 로직이 필요합니다.
+
+## 관련 개념
+
+- [[cookie]]: JWT를 저장하는 방법 중 하나
+- [[session]]: JWT의 대안인 세션 기반 인증
+- [[local-storage]]: JWT를 저장하는 클라이언트 저장소

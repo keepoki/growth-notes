@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Command
+---
+tags:
+  - DesignPattern
+  - Behavioral
+title: Command Pattern
+---
 
 요청을 객체(Command)로 캡슐화해서, 실행하는 객체(Invoker)와 실제 작업을 수행하는 객체(Receiver)를 분리하는 패턴입니다.
 
@@ -154,3 +157,11 @@ handleInput("s"); // Player1 moves down
 
 - Command 패턴은 **요청을 객체로 만들어 저장하고 실행할 수 있게 해줍니다.**
 - 실무에서는 **Undo/Redo, 요청 큐잉, 매크로 명령** 같은 곳에서 자주 쓰입니다.
+
+## 관련 개념
+
+- [[memento]]: 객체 상태를 저장하는 패턴 (Undo/Redo와 함께 사용)
+- [[observer]]: 이벤트 기반 명령 실행
+- [[chain-of-responsibility]]: 명령 처리를 연쇄적으로 전달
+- [[event-driven]]: Command를 이벤트로 처리하는 아키텍처
+- [[designpattern]]: 디자인 패턴 전체 개요

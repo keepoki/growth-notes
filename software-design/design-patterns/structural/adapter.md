@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Adapter
+---
+tags:
+  - DesignPattern
+  - Structural
+title: Adapter Pattern
+---
 
 서로 다른 인터페이스를 가진 클래스들이 함께 동작할 수 있도록 **중간에 변환기(Adapter)** 를 두는 패턴입니다.  
 흔히 "어댑터 = 변환기(돼지코 콘센트)"로 비유합니다.
@@ -124,3 +127,10 @@ console.log(payment.pay(50)); // "결제 완료: 5000 cents"
 
 Adapter는 "**돼지코 변환기**"처럼, 서로 맞지 않는 인터페이스를 중간에서 연결해주는 역할을 합니다.  
 덕분에 기존 코드를 고치지 않고 재사용할 수 있다는 장점이 있습니다.
+
+## 관련 개념
+
+- [[facade]]: 복잡한 시스템을 단순화하는 패턴
+- [[bridge]]: 추상화와 구현을 분리하는 패턴
+- [[proxy]]: 객체 접근을 제어하는 패턴
+- [[designpattern]]: 디자인 패턴 전체 개요

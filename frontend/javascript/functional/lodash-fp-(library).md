@@ -1,6 +1,11 @@
-#Functional
-
-# loadsh/fp
+---
+tags:
+  - JavaScript
+  - Functional
+  - Frontend
+  - Library
+title: Lodash/FP (함수형 프로그래밍 라이브러리)
+---
 
 유틸 함수 라이브러리 `loadsh`, 그중에서도 함수형 스타일을 강화한 `loadsh/fp`를 소개합니다.
 설치: `npm install lodash`
@@ -107,3 +112,9 @@ console.log(user.address.zip);    // "12345" (원본 불변)
 - 함수형 스타일로 데이터를 처리하고 싶을 때
 - 객체/배열을 **불변하게** 다루고 싶을 때
 - 함수 조합과 커리를 활용해 **가독성 좋은 코드**를 만들고 싶을 때
+
+## 관련 개념
+
+- [[functional-programming]]: 함수형 프로그래밍 개념
+- [[closure]]: Lodash/FP에서 활용하는 클로저
+- [[iterator]]: 함수형 데이터 처리

@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Event Bus
+---
+tags:
+  - DesignPattern
+  - Messaging
+title: Event Bus Pattern
+---
 
 애플리케이션 내에서 **컴포넌트 간 메시지(이벤트)를 중개하는 중앙 통신 허브**입니다.
 발행-구독(Pub/Sub) 패턴의 한 구현으로 볼 수 있습니다.
@@ -110,3 +113,11 @@ bus.emit("orderCreated", { id: 123, product: "노트북" });
 - Event Bus = "앱 내부 이벤트 중개소"
 - 장점: 느슨한 결합, 이벤트 중심 아키텍처 구현 용이
 - 단점: 이벤트 흐름이 복잡해지면 추적 어려움 (디버깅 주의)
+
+## 관련 개념
+
+- [[publish-subscribe]]: Pub/Sub 메시징 패턴
+- [[observer]]: 이벤트 기반 패턴
+- [[mediator]]: 중재자 패턴
+- [[event-driven]]: 이벤트 기반 아키텍처
+- [[designpattern]]: 디자인 패턴 전체 개요

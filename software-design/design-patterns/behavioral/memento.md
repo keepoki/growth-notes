@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Memento
+---
+tags:
+  - DesignPattern
+  - Behavioral
+title: Memento Pattern
+---
 
 객체의 상태를 저장해두었다가 필요할 때 다시 복원할 수 있게 하는 패턴입니다.
 → "Undo(되돌리기)" 기능이나 "히스토리 관리"에 자주 사용됩니다.
@@ -177,3 +180,10 @@ game.showStatus(); // 레벨: 1, HP: 100
 - Memento는 "상태 스냅샷 저장/복원" 패턴입니다.
 - Originator(상태 보관 객체) ↔ Memento(스냅샷) ↔ Caretaker(히스토리 관리자) 구조입니다.
 - 단점: 상태가 많거나 크면 메모리 사용량이 커집니다.
+
+## 관련 개념
+
+- [[command]]: Undo/Redo와 함께 사용되는 패턴
+- [[prototype]]: 객체를 복제하는 패턴
+- [[event-sourcing]]: 상태 변경을 이벤트로 저장하는 패턴
+- [[designpattern]]: 디자인 패턴 전체 개요

@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Builder
+---
+tags:
+  - DesignPattern
+  - Creational
+title: Builder Pattern
+---
 
 복잡한 객체를 생성할 때, **객체 생성 과정을 단계별로 나누어 캡슐화**하는 패턴입니다.
 클라이언트는 객체 생성 과정을 몰라도, 빌더를 통해 유연하게 다양한 객체를 만들 수 있습니다.
@@ -144,3 +147,10 @@ console.log(formHTML);
 
 - `Factory Method` / `Abstract Factory`는 **무엇을 만들지(타입 선택)에** 초점이고,
 - `Builder`는 **어떻게 만들지(과정과 조립)에** 초점이 있어요.
+
+## 관련 개념
+
+- [[factory-method]]: 객체 타입 선택에 초점을 둔 패턴
+- [[abstract-factory]]: 제품군 생성 패턴
+- [[composite]]: Builder로 복잡한 트리 구조 생성 가능
+- [[designpattern]]: 디자인 패턴 전체 개요

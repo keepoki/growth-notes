@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Service Locator
+---
+tags:
+  - DesignPattern
+  - DependencyManagement
+title: Service Locator Pattern
+---
 
 의존성 주입(Dependency Injection)과 비슷하지만,  객체를 **중앙 레지스트리(Service Locator)에** 등록해두고 필요한 곳에서 찾아 쓰는 패턴입니다.
 
@@ -115,3 +118,10 @@ ServiceLocator.get("audio").play("explosion.mp3");
 - Service Locator = "서비스 중앙 전화번호부"
 - 장점: 편리, 빠른 접근
 - 단점: 의존성이 숨겨져 디버깅/테스트 어려움 → **남용 주의**
+
+## 관련 개념
+
+- [[dependency-injection]]: Service Locator의 대안 패턴
+- [[singleton]]: 전역 인스턴스 관리 패턴
+- [[factory-method]]: 객체 생성 패턴
+- [[designpattern]]: 디자인 패턴 전체 개요

@@ -1,6 +1,8 @@
-#Architecture
-
-# Clean Architecture
+---
+tags:
+  - Architecture
+title: Clean Architecture
+---
 
 Clean Architecture는 **로버트 C. 마틴(‘Uncle Bob’)** 이 제안한 소프트웨어 아키텍처 패턴으로,  
 **비즈니스 규칙(엔터프라이즈 로직)을** 애플리케이션의 중심에 두고, **UI, DB, 프레임워크 같은 외부 의존성을 바깥쪽 계층**에 배치하는 구조입니다.
@@ -115,3 +117,11 @@ app.listen(3000, () => console.log("Clean Architecture running on 3000"));
 - 대규모 엔터프라이즈 시스템
 - 마이크로서비스 및 도메인 주도 설계 기반 프로젝트
 - 은행, 금융, 의료 시스템 같은 장기 유지보수 필수 서비스
+
+## 관련 개념
+
+- [[hexagonal]]: 클린 아키텍처와 유사한 Port & Adapter 구조
+- [[ddd-(domain-driven-design)]]: 함께 사용하면 좋은 도메인 주도 설계
+- [[layered]]: 계층형 아키텍처의 발전된 형태
+- [[repository]]: 클린 아키텍처에서 데이터 접근 추상화에 사용되는 패턴
+- [[dependency-injection]]: 의존성 규칙 구현에 필수적인 패턴

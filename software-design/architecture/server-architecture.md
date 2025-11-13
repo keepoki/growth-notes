@@ -1,6 +1,9 @@
-#Architecture
-
-# Server Architecture
+---
+tags:
+  - Architecture
+  - Server
+title: Server Architecture
+---
 
 서버 아키텍처 패턴은 서비스 성격(규모, 복잡도, 변경 주기, 트래픽 패턴 등)에 따라 여러 가지 접근 방식이 있습니다.
 
@@ -73,3 +76,13 @@
 | 클린/헥사고날  | 도메인 중심, 의존성 역전 | 복잡한 비즈니스 로직, 장기 유지보수 필요할 때    |
 | CQRS     | 읽기/쓰기 분리       | 조회 성능 중요한 서비스                 |
 | 이벤트 소싱   | 이벤트 단위 저장      | 금융, 로깅, 이벤트 추적 필요 서비스         |
+
+## 관련 개념
+
+- [[layered]]: 전통적인 계층형 아키텍처
+- [[event-driven]]: 이벤트 기반 아키텍처
+- [[microservices]]: 마이크로서비스 아키텍처
+- [[clean-architecture]]: 클린 아키텍처
+- [[hexagonal]]: 헥사고날 아키텍처
+- [[cqrs-(command-query-responsibility-segregation)]]: CQRS 패턴
+- [[event-sourcing]]: 이벤트 소싱 패턴

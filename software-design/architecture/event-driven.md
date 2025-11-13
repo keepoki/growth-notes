@@ -1,6 +1,9 @@
-#Architecture
-
-# Event-Driven
+---
+tags:
+  - Architecture
+  - EventDriven
+title: Event-Driven Architecture
+---
 
 이벤트 기반 아키텍처는 시스템이 **이벤트(event)** 를 중심으로 동작하는 구조입니다.
 
@@ -106,3 +109,12 @@ start();
 
 - Kafka, RabbitMQ, AWS SNS/SQS, Redis Pub/Sub
 - 실시간 로그 수집, 알림 서비스, IoT 데이터 처리, 결제/주문 워크플로우
+
+## 관련 개념
+
+- [[observer]]: 이벤트 기반 아키텍처의 기본 패턴
+- [[publish-subscribe]]: 이벤트 전달 메커니즘
+- [[event-bus]]: 이벤트 중개 패턴
+- [[microservices]]: 이벤트 기반으로 통신하는 마이크로서비스
+- [[event-sourcing]]: 이벤트를 저장하는 패턴
+- [[saga]]: 분산 트랜잭션을 이벤트로 처리

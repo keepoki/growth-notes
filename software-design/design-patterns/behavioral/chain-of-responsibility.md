@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Chain of Responsibility
+---
+tags:
+  - DesignPattern
+  - Behavioral
+title: Chain of Responsibility Pattern
+---
 
 요청을 처리하는 여러 객체들이 **체인(연결 고리)** 으로 묶여 있어서, 요청이 해당 객체에서 처리되거나, **다음 객체로 넘겨지는 방식**의 패턴입니다.
 → 클라이언트는 어떤 객체가 요청을 처리하는지 몰라도 됩니다.
@@ -112,3 +115,11 @@ document.getElementById("parent").addEventListener("click", () => {
 
 - Chain of Responsibility는 **요청을 처리할 기회를 여러 객체에 주는 패턴**.
 - 클라이언트는 내부 구조를 몰라도 되고, 유연하게 체인을 변경할 수 있습니다.
+
+## 관련 개념
+
+- [[command]]: 요청을 객체로 캡슐화하는 패턴
+- [[decorator]]: 객체를 감싸서 기능을 추가하는 패턴
+- [[composite]]: 트리 구조로 객체를 조합하는 패턴
+- [[middleware]]: 요청 처리 체인 구현 방식
+- [[designpattern]]: 디자인 패턴 전체 개요

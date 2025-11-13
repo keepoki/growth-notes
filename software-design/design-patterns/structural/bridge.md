@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Bridge
+---
+tags:
+  - DesignPattern
+  - Structural
+title: Bridge Pattern
+---
 
 **추상화(Abstraction)** 와 **구현(Implementation)** 을 분리하여, 두 부분을 독립적으로 확장할 수 있게 해주는 패턴입니다.
 쉽게 말해, "상속 대신 위임(조합)"을 활용해서 **확장성을 높이는 구조**입니다.
@@ -169,3 +172,10 @@ smsAlert.notify("새로운 메시지 도착");
 
 - Adapter: "인터페이스를 변환" → 호환성 문제 해결
 - Bridge: "추상화와 구현을 분리" → 확장성 문제 해결
+
+## 관련 개념
+
+- [[adapter]]: 인터페이스 변환 패턴
+- [[strategy]]: 알고리즘을 분리하는 패턴
+- [[abstract-factory]]: 제품군 생성 패턴
+- [[designpattern]]: 디자인 패턴 전체 개요

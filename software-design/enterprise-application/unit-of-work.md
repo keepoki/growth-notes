@@ -1,6 +1,10 @@
-#DesignPattern
-
-# Unit of Work
+---
+tags:
+  - DesignPattern
+  - EnterpriseApplication
+  - Transaction
+title: Unit of Work Pattern
+---
 
 - 여러 개의 데이터 변경 작업(Insert, Update, Delete)을 **한 트랜잭션 단위로 묶어서 처리**하는 패턴
 - 즉, **변경 사항을 추적**하다가,
@@ -136,3 +140,11 @@ class UserService {
 - Unit of Work = "변경 사항을 모아두고 한꺼번에 Commit/Rollback"
 - 장점: **트랜잭션 관리, 무결성 보장**
 - 단점: 단순 CRUD에는 오버엔지니어링
+
+## 관련 개념
+
+- [[repository]]: Unit of Work와 함께 사용되는 패턴
+- [[data-mapper]]: 객체와 DB 매핑
+- [[identity-map]]: 객체 캐싱 패턴
+- [[service-layer]]: Unit of Work를 사용하는 계층
+- [[ddd-(domain-driven-design)]]: 애그리게잇 트랜잭션 관리

@@ -1,6 +1,10 @@
-#DesignPattern
-
-# DAO (Data Access object)
+---
+tags:
+  - DesignPattern
+  - EnterpriseApplication
+  - DataAccess
+title: DAO (Data Access Object) Pattern
+---
 
 - 데이터 접근 로직(DB CRUD)을 **전담하는 객체(DAO 클래스)를** 따로 두고, 비즈니스 로직에서는 DAO를 통해서만 DB를 접근하도록 하는 패턴입니다.
 - **데이터 접근 계층(Data Access Layer, DAL)을** 명확히 분리
@@ -128,3 +132,11 @@ async function userService(db) {
 - DAO = "DB 작업을 전담하는 계층"
 - 장점: 관심사 분리, 테스트/유지보수 용이
 - 단점: 코드가 장황해짐
+
+## 관련 개념
+
+- [[repository]]: DAO와 유사하지만 도메인 중심
+- [[data-mapper]]: 도메인과 DB 분리 패턴
+- [[active-record]]: DB 접근이 객체 내부에 있는 패턴
+- [[service-layer]]: DAO를 사용하는 상위 계층
+- [[unit-of-work]]: 트랜잭션 관리 패턴

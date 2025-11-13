@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Interpreter
+---
+tags:
+  - DesignPattern
+  - Behavioral
+title: Interpreter Pattern
+---
 
 특정 도메인의 언어(DSL, Domain-Specific Language)를 정의하고, 해당 언어의 문장을 해석(interpret)하는 해석기를 만드는 패턴입니다.
 
@@ -152,3 +155,10 @@ console.log(interpret("5 3 + 2 *")); // (5 + 3) * 2 = 16
 - Interpreter는 **언어(문법)와 해석기를 객체로 정의**하는 패턴입니다.
 - 작은 DSL(도메인 전용 언어) 구현에 적합하지만,  복잡한 문법(프로그래밍 언어 전체 수준)에는 비효율적
   → 이럴 땐 파서/컴파일러 도구 사용하는 것이 좋습니다.
+
+## 관련 개념
+
+- [[composite]]: 트리 구조로 문법을 표현
+- [[visitor]]: 구문 트리를 순회하며 해석
+- [[command]]: 명령을 객체로 표현하는 패턴
+- [[designpattern]]: 디자인 패턴 전체 개요

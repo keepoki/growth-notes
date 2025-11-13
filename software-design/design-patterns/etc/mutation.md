@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Mutation
+---
+tags:
+  - DesignPattern
+  - Creational
+title: Multiton Pattern
+---
 
 Singleton이 "하나의 인스턴스만 유지"한다면, **Multiton은 Key마다 하나의 인스턴스만 유지**하는 패턴입니다.
 예: DB 커넥션, 로거(Logger), 설정 객체 등에서 "종류별 단일 인스턴스" 필요할 때
@@ -110,3 +113,11 @@ const lightConfig = ConfigManager.getConfig("light");
 - **Singleton → 전역 1개**
 - **Multiton → Key별 1개**
 - 단점: 전역 상태 관리이므로 남용하면 코드 테스트/디버깅 어려워짐
+
+## 관련 개념
+
+- [[singleton]]: Multiton의 기본 패턴
+- [[object-pool]]: 객체를 재사용하는 패턴
+- [[flyweight]]: 객체를 공유하는 패턴
+- [[factory-method]]: Key별 객체 생성
+- [[designpattern]]: 디자인 패턴 전체 개요

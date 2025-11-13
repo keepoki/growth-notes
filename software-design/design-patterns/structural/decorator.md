@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Decorator
+---
+tags:
+  - DesignPattern
+  - Structural
+title: Decorator Pattern
+---
 
 객체에 새로운 기능을 추가할 때,  상속을 쓰지 않고 **런타임에 동적으로 기능을 확장**할 수 있도록 하는 패턴입니다.
 흔히 "포장지(Wrapper)"로 비유합니다.
@@ -135,3 +138,10 @@ console.log(EnhancedButton({ label: "Click Me" }));
 - `Decorator`는 객체를 감싸면서 기능을 확장하는 패턴이에요.
 - `상속` 대신 `조합`을 통해 유연성을 확보합니다.
 - 실무에서는 **미들웨어, HOC, 파이프라인 처리** 같은 곳에서 많이 쓰입니다.
+
+## 관련 개념
+
+- [[proxy]]: 객체를 감싸서 접근을 제어하는 패턴
+- [[composite]]: 트리 구조로 객체를 조합하는 패턴
+- [[strategy]]: 알고리즘을 교체하는 패턴
+- [[designpattern]]: 디자인 패턴 전체 개요

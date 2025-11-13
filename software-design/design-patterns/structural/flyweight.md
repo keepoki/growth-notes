@@ -1,6 +1,9 @@
-#DesignPattern
-
-# Flyweight
+---
+tags:
+  - DesignPattern
+  - Structural
+title: Flyweight Pattern
+---
 
 대량의 객체를 만들 때, **공유할 수 있는 부분(내부 상태)** 은 공유하고,  **변하는 부분(외부 상태)** 만 개별적으로 관리해서  메모리 사용을 최소화하는 패턴입니다.
 
@@ -134,3 +137,11 @@ console.log(saveIcon1 === saveIcon2); // true
 - Flyweight는 **공유 가능한 객체를 캐싱해 재사용**하는 패턴.
 - 장점: 메모리 절약, 성능 개선.
 - 단점: 외부 상태를 잘 관리하지 않으면 코드가 복잡해질 수 있음.
+
+## 관련 개념
+
+- [[object-pool]]: 객체를 재사용하는 패턴
+- [[singleton]]: 인스턴스를 하나만 생성하는 패턴
+- [[prototype]]: 객체를 복제하는 패턴
+- [[identity-map]]: 객체 캐싱 패턴
+- [[designpattern]]: 디자인 패턴 전체 개요

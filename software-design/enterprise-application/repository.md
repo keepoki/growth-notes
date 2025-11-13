@@ -1,6 +1,10 @@
-#DesignPattern
-
-# Repository
+---
+tags:
+  - DesignPattern
+  - EnterpriseApplication
+  - DataAccess
+title: Repository Pattern
+---
 
 - 도메인 로직(비즈니스 로직)과 데이터 접근(DB, API 호출 등)을 분리
 - **Repository = 데이터 저장소 추상화 계층**
@@ -135,3 +139,12 @@ const User = sequelize.define("User", {
 - Repository = "데이터 접근 추상화 계층"
 - 장점: **관심사 분리, 테스트 용이, DB 교체 유연성**
 - 단점: 너무 단순하면 ORM과 중복, 너무 복잡하면 오버엔지니어링
+
+## 관련 개념
+
+- [[data-mapper]]: 도메인과 DB를 분리하는 유사한 패턴
+- [[dao-(data-access-object)]]: 데이터 접근 추상화의 다른 접근법
+- [[unit-of-work]]: Repository와 함께 사용되는 트랜잭션 패턴
+- [[service-layer]]: Repository를 사용하는 상위 계층
+- [[clean-architecture]]: Repository 패턴을 활용하는 아키텍처
+- [[ddd-(domain-driven-design)]]: 애그리게잇 저장에 Repository 사용
